@@ -1,432 +1,475 @@
 <!DOCTYPE html>
 <html lang="cs-CZ">
+  <head>
+    <meta charset="utf-8" />
+    <title>01.0_homepage - Kaprain Intranet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no" />
 
-<head>
-	<meta charset="utf-8" />
-	<title>01.0_homepage - Kaprain Intranet</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-	<meta name="format-detection" content="telephone=no" />
+    <!--****** Favicon ******-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
-	<!--****** Favicon ******-->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <!--****** Fonts ******-->
 
-	<!--****** Fonts ******-->
+    <!--****** Styles  ******-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+    <link rel="stylesheet" media="print" href="css/prints.css" />
+    <!--****** Styles  ******-->
 
-	<!--****** Styles  ******-->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
-	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
-	<link rel="stylesheet" media="print" href="css/prints.css" />
-	<!--****** Styles  ******-->
+    <!--****** Scripts  ******-->
+    <link
+      rel="preload"
+      href="https://code.jquery.com/jquery-3.6.0.min.js"
+      as="script"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      as="script"
+      crossorigin
+    />
+    <link rel="preload" href="js/scripts.js" as="script" />
+    <!-- ****** scripts ****** -->
+  </head>
+  <body>
+    <div class="base">
+      <header class="header">
+  <div class="header__inner">
+    <a class="header__logo" href="/">
+      <img src="images/ico/logo.svg" alt="logo" />
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li>
+          <a href="#">O Kaprainu</a>
+        </li>
+        <li>
+          <a href="#">Aktuality</a>
+        </li>
+        <li>
+          <a href="#">Akce</a>
+        </li>
+        <li>
+          <a href="#">Adresář</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__right">
+      <a class="btn btn-secondary" href="#"> Můj personální portál </a>
 
-	<!--****** Scripts  ******-->
-	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
-	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
-	<link rel="preload" href="js/scripts.js" as="script" />
-	<!-- ****** scripts ****** -->
-</head>
+      <button class="c-header__opener js-header__opener" type="button">
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <div class="menu">
+  <div class="menu__wrapper">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="menu__title">Hlavní navigace</div>
+        <ul class="menu__list">
+          <li>
+            <a class="active" href="#">Domů</a>
+          </li>
+          <li>
+            <a href="#">O Kaprainu</a>
+          </li>
+          <li>
+            <a href="#">Aktuality</a>
+          </li>
+          <li>
+            <a href="#">Akce</a>
+          </li>
+          <li>
+            <a href="#">Adresář</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="menu__title">Další podstránky</div>
+        <ul class="menu__list">
+          <li>
+            <a href="#">Benefity pro zaměstnanace</a>
+          </li>
+          <li>
+            <a href="#">Volné pozice</a>
+          </li>
+          <li>
+            <a href="#">O intranetu</a>
+          </li>
+          <li>
+            <a href="#">Směrnice a formuláře</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="menu__title">zaměstnanecká podpora</div>
+        <ul class="menu__support">
+          <li class="menu__support-admin">
+            <span> Spojte se s Adminom Intranetu </span>
+            <a href="tel:+420800800790">+420 800 800 790</a>
+          </li>
+          <li class="menu__support-hr">
+            <span> Spojte se s Vaším HR Oddělením </span>
+            <a href="tel:+420800800800">+420 800 800 800</a>
+          </li>
+          <li class="menu__support-it">
+            <span>Spojte se s Vaším IT Oddělením</span>
+            <a href="tel:+420810810810">+420 810 810 810</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-<body>
-	<div class="base">
-		<header class="header">
-			<div class="header__inner">
-				<a class="header__logo" href="/">
-					<img src="images/ico/logo.svg" alt="logo" />
-				</a>
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li>
-							<a href="#">O Kaprainu</a>
-						</li>
-						<li>
-							<a href="#">Aktuality</a>
-						</li>
-						<li>
-							<a href="#">Akce</a>
-						</li>
-						<li>
-							<a href="#">Adresář</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="header__right">
-					<a class="btn btn-secondary" href="#"> Můj personální portál </a>
-
-					<button class="c-header__opener js-header__opener" type="button">
-						<span></span>
-					</button>
-				</div>
-			</div>
-			<div class="menu">
-				<div class="menu__wrapper">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="menu__title">Hlavní navigace</div>
-							<ul class="menu__list">
-								<li>
-									<a class="active" href="#">Domů</a>
-								</li>
-								<li>
-									<a href="#">O Kaprainu</a>
-								</li>
-								<li>
-									<a href="#">Aktuality</a>
-								</li>
-								<li>
-									<a href="#">Akce</a>
-								</li>
-								<li>
-									<a href="#">Adresář</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4">
-							<div class="menu__title">Další podstránky</div>
-							<ul class="menu__list">
-								<li>
-									<a href="#">Benefity pro zaměstnanace</a>
-								</li>
-								<li>
-									<a href="#">Volné pozice</a>
-								</li>
-								<li>
-									<a href="#">O intranetu</a>
-								</li>
-								<li>
-									<a href="#">Směrnice a formuláře</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-4">
-							<div class="menu__title">zaměstnanecká podpora</div>
-							<ul class="menu__support">
-								<li class="menu__support-admin">
-									<span> Spojte se s Adminom Intranetu </span>
-									<a href="tel:+420800800790">+420 800 800 790</a>
-								</li>
-								<li class="menu__support-hr">
-									<span> Spojte se s Vaším HR Oddělením </span>
-									<a href="tel:+420800800800">+420 800 800 800</a>
-								</li>
-								<li class="menu__support-it">
-									<span>Spojte se s Vaším IT Oddělením</span>
-									<a href="tel:+420810810810">+420 810 810 810</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</header>
-		<main class="main" aria-label="Hlavní obsah">
-			<section class="topstory">
-				<div class="topstory__inner">
-					<div class="topstory__item">
-						<img src="images/content/topstory-1.webp" alt="" />
-						<div class="container">
-							<div class="topstory__content">
-								<h1 class="h1">Vítá vás nový Kaprainet</h1>
-								<span> Vše důležité najdete jednoduše na jednom místě </span>
-								<a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
-							</div>
-						</div>
-					</div>
-					<div class="topstory__item">
-						<img src="images/content/topstory-2.webp" alt="" />
-						<div class="container">
-							<div class="topstory__content">
-								<h1 class="h1">Vítá vás nový Kaprainet - 2</h1>
-								<span>
-									Vše důležité najdete jednoduše na jednom místě Vše důležité najdete jednoduše na jednom
-									místě
-								</span>
-								<a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
-							</div>
-						</div>
-					</div>
-					<div class="topstory__item">
-						<img src="images/content/topstory-3.webp" alt="" />
-						<div class="container">
-							<div class="topstory__content">
-								<h1 class="h1">Vítá vás nový Kaprainet - 3</h1>
-								<span> Vše důležité </span>
-								<a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
-							</div>
-						</div>
-					</div>
-					<div class="topstory__item">
-						<img src="images/content/topstory-4.webp" alt="" />
-						<div class="container">
-							<div class="topstory__content">
-								<h1 class="h1">Vítá vás nový Kaprainet - 4</h1>
-								<span> Vše důležité najdete jednoduše na jednom místě </span>
-								<a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="alert">
-				<div class="container">
-					<div class="alert__inner">
-						<div class="alert__title">Upozorňení</div>
-						<p>
-							Upozornění na odstávku systému. Upozotňujeme , že v sobotu 21.08.2024 od 07:30 nebude
-							ePortál v prevádzke.
-						</p>
-					</div>
-				</div>
-			</div>
-			<section class="hp-posts">
-				<div class="container">
-					<div class="d-flex justify-content-between align-items-center mb-48">
-						<h2 class="h2 titleDecoration">Aktuality</h2>
-						<a class="btn btn-secondary" href="#"> Prohlédnout všechny aktuality </a>
-					</div>
-					<div class="row g-5">
-						<div class="col-lg-4">
-							<div class="post">
-								<div class="post__img">
-									<img src="images/content/topstory-1.webp" loading="lazy" alt="" />
-								</div>
-								<div class="post__info">
-									<h3 class="h3 text-secondary subTitleDecoration mb-3">
-										Skupina Mafra posílila svou dozorčí radu
-									</h3>
-									<p>Mediální skupinu MAFRA spolu s pardubickými chemickými...</p>
-									<a href="#" class="btn btn-primary-simple">Více informací</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="post">
-								<div class="post__img">
-									<img src="images/content/topstory-2.webp" loading="lazy" alt="" />
-								</div>
-								<div class="post__info">
-									<h3 class="h3 text-secondary subTitleDecoration mb-3">
-										Investiční skupina Kaprain dokončila...
-									</h3>
-									<p>Investiční skupina Kaprain dokončila na konci roku nákup společnosti...</p>
-									<a href="#" class="btn btn-primary-simple">Více informací</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="post">
-								<div class="post__img">
-									<img src="images/content/topstory-3.webp" loading="lazy" alt="" />
-								</div>
-								<div class="post__info">
-									<h3 class="h3 text-secondary subTitleDecoration mb-3">
-										Kaprain a Penta Real Estate společně...
-									</h3>
-									<p>
-										Společnosti Kaprain a Penta Real Estate uzavřely dohodu o Kaprain a Penta Real Estate
-										uzavřely dohodu o
-									</p>
-									<a href="#" class="btn btn-primary-simple">Více informací</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="hp-benefits">
-				<div class="container">
-					<div class="d-flex justify-content-between align-items-center mb-48">
-						<h2 class="h2 titleDecoration">Benefity</h2>
-						<a class="btn btn-secondary" href="#"> Prohlédnout všechny benefity </a>
-					</div>
-					<ul class="hp-benefits__inner">
-						<li>
-							<a href="#" class="hp-benefits__item">
-								<div class="hp-benefits__img">
-									<img src="images/content/benefits/kultura.png" alt="" />
-								</div>
-								<div class="hp-benefits__icon">
-									<img src="images/ico/kultura.svg" loading="lazy" alt="kultura" />
-								</div>
-								<div class="hp-benefits__title">Kultura</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="hp-benefits__item">
-								<div class="hp-benefits__img">
-									<img src="images/content/benefits/sport.png" alt="" />
-								</div>
-								<div class="hp-benefits__icon">
-									<img src="images/ico/sport.svg" loading="lazy" alt="sport" />
-								</div>
-								<div class="hp-benefits__title">Sport</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="hp-benefits__item">
-								<div class="hp-benefits__img">
-									<img src="images/content/benefits/kultura.png" alt="" />
-								</div>
-								<div class="hp-benefits__icon">
-									<img src="images/ico/kultura.svg" loading="lazy" alt="kultura" />
-								</div>
-								<div class="hp-benefits__title">Kultura</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="hp-benefits__item">
-								<div class="hp-benefits__img">
-									<img src="images/content/benefits/sport.png" alt="" />
-								</div>
-								<div class="hp-benefits__icon">
-									<img src="images/ico/sport.svg" loading="lazy" alt="sport" />
-								</div>
-								<div class="hp-benefits__title">Sport</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="hp-benefits__item">
-								<div class="hp-benefits__img">
-									<img src="images/content/benefits/kultura.png" alt="" />
-								</div>
-								<div class="hp-benefits__icon">
-									<img src="images/ico/kultura.svg" loading="lazy" alt="kultura" />
-								</div>
-								<div class="hp-benefits__title">Kultura</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="hp-promotion">
-				<div class="hp-promotion__wrap">
-
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-6">
-								<div class="hp-promotion__title">Vyhrajte <br />iPhone 15 PRO</div>
-							</div>
-							<div class="col-lg-6">
-								<p class="fw-light mb-32">
-									Vyplňte krátký dotazník spokojenosti a zúčastněte se soutěže o skvělé ceny! Vyplňte
-									krátký dotazník spokojenosti a zúčastněte se soutěže o skvělé ceny!
-								</p>
-								<a href="#" class="btn btn-secondary">Chci se zapojit</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="hp-events">
-				<div class="container">
-					<div class="d-flex justify-content-between align-items-center mb-48">
-						<h2 class="h2">Nadcházející eventy</h2>
-						<a class="btn btn-secondary" href="#"> Prohlédnout všechny eventy </a>
-					</div>
-					<div class="hp-events__item">
-						<div class="row g-5">
-							<div class="col-lg-6">
-								<div class="hp-events__date">7.12.</div>
-								<div class="hp-events__title">Mikulášská párty</div>
-							</div>
-							<div class="col-lg-6">
-								<p class="fw-light text-secondary mb-32">
-									Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné vánoční atmosféry! Srdečně
-									vás zveme na náš exkluzivní firemní mikulášský večírek, který se uskuteční 7.12. v našem
-									útulném vánočním sále.
-								</p>
-								<a href="#" class="btn btn-primary-simple">Více informací</a>
-							</div>
-						</div>
-					</div>
-					<div class="hp-events__item">
-						<div class="row g-5">
-							<div class="col-lg-6">
-								<div class="hp-events__date">22.12.</div>
-								<div class="hp-events__title">Vianočná párty</div>
-							</div>
-							<div class="col-lg-6">
-								<p class="fw-light text-secondary mb-32">
-									Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné vánoční atmosféry! Srdečně
-									vás zveme na náš exkluzivní firemní mikulášský večírek, který se uskuteční 7.12. v našem
-									útulném vánočním sále. Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné
-									vánoční atmosféry! Srdečně vás zveme na náš exkluzivní firemní mikulášský večírek, který
-									se uskuteční 7.12. v našem útulném vánočním sále.
-								</p>
-								<a href="#" class="btn btn-primary-simple">Více informací</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer" style="background: url('../images/bg/footer.jpg') no-repeat center center / cover">
-			<div class="container">
-				<div class="footer__inner">
-					<div class="footer__col">
-						<h6 class="h3 subTitleDecoration text-white">Hlavní navigace</h6>
-						<ul class="footer__list">
-							<li>
-								<a href="#">Domů</a>
-							</li>
-							<li>
-								<a href="#">O Kaprainu</a>
-							</li>
-							<li>
-								<a href="#">Aktuality</a>
-							</li>
-							<li>
-								<a href="#">Akce</a>
-							</li>
-							<li>
-								<a href="#">Adresář</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__col">
-						<h6 class="h3 subTitleDecoration text-white">Další stránky</h6>
-						<ul class="footer__list">
-							<li>
-								<a href="#">Benefity pro zaměstnanace</a>
-							</li>
-							<li>
-								<a href="#">Volné pozice</a>
-							</li>
-							<li>
-								<a href="#">O intranetu</a>
-							</li>
-							<li>
-								<a href="#">Směrnice a formuláře</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__col">
-						<h6 class="h3 subTitleDecoration text-white">Podpora</h6>
-						<ul class="footer__list">
-							<li>
-								<div class="text-sm fw-medium text-uppercase text-white mb-1">Admin Intranetu</div>
-								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
-							</li>
-							<li>
-								<div class="text-sm fw-medium text-uppercase text-white mb-1">HR Oddělení</div>
-								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
-							</li>
-							<li>
-								<div class="text-sm fw-medium text-uppercase text-white mb-1">IT Oddělení</div>
-								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-	<script defer src="js/scripts.js"></script>
-</body>
-
+</header>
+      <main class="main" aria-label="Hlavní obsah"> <section class="topstory">
+  <div class="topstory__inner">
+    <div class="topstory__item">
+      <img src="images/content/topstory-1.webp" alt="" />
+      <div class="container">
+        <div class="topstory__content">
+          <h1 class="h1">Vítá vás nový Kaprainet</h1>
+          <span> Vše důležité najdete jednoduše na jednom místě </span>
+          <a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
+        </div>
+      </div>
+    </div>
+    <div class="topstory__item">
+      <img src="images/content/topstory-2.webp" alt="" />
+      <div class="container">
+        <div class="topstory__content">
+          <h1 class="h1">Vítá vás nový Kaprainet - 2</h1>
+          <span>
+            Vše důležité najdete jednoduše na jednom místě Vše důležité najdete jednoduše na jednom
+            místě
+          </span>
+          <a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
+        </div>
+      </div>
+    </div>
+    <div class="topstory__item">
+      <img src="images/content/topstory-3.webp" alt="" />
+      <div class="container">
+        <div class="topstory__content">
+          <h1 class="h1">Vítá vás nový Kaprainet - 3</h1>
+          <span> Vše důležité </span>
+          <a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
+        </div>
+      </div>
+    </div>
+    <div class="topstory__item">
+      <img src="images/content/topstory-4.webp" alt="" />
+      <div class="container">
+        <div class="topstory__content">
+          <h1 class="h1">Vítá vás nový Kaprainet - 4</h1>
+          <span> Vše důležité najdete jednoduše na jednom místě </span>
+          <a class="btn btn-primary btn-arrow" href="#"> Dozvědět se více </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <div class="alert">
+  <div class="container">
+    <div class="alert__inner">
+      <div class="alert__title">Upozorňení</div>
+      <p>
+        Upozornění na odstávku systému. Upozotňujeme , že v sobotu 21.08.2024 od 07:30 nebude
+        ePortál v prevádzke.
+      </p>
+    </div>
+  </div>
+</div>
+ <section class="hp-posts">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-48">
+      <h2 class="h2 titleDecoration">Aktuality</h2>
+      <a class="btn btn-secondary" href="#"> Prohlédnout všechny aktuality </a>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="post">
+          <div class="post__img">
+            <img src="images/content/topstory-1.webp" loading="lazy" alt="" />
+          </div>
+          <div class="post__info">
+            <h3 class="h3 text-secondary subTitleDecoration mb-3">
+              Skupina Mafra posílila svou dozorčí radu
+            </h3>
+            <p>Mediální skupinu MAFRA spolu s pardubickými chemickými...</p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="post">
+          <div class="post__img">
+            <img src="images/content/topstory-2.webp" loading="lazy" alt="" />
+          </div>
+          <div class="post__info">
+            <h3 class="h3 text-secondary subTitleDecoration mb-3">
+              Investiční skupina Kaprain dokončila...
+            </h3>
+            <p>Investiční skupina Kaprain dokončila na konci roku nákup společnosti...</p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="post">
+          <div class="post__img">
+            <img src="images/content/topstory-3.webp" loading="lazy" alt="" />
+          </div>
+          <div class="post__info">
+            <h3 class="h3 text-secondary subTitleDecoration mb-3">
+              Kaprain a Penta Real Estate společně...
+            </h3>
+            <p>
+              Společnosti Kaprain a Penta Real Estate uzavřely dohodu o Kaprain a Penta Real Estate
+              uzavřely dohodu o
+            </p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="hp-benefits">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-48">
+      <h2 class="h2 titleDecoration">Benefity</h2>
+      <a class="btn btn-secondary" href="#"> Prohlédnout všechny benefity </a>
+    </div>
+    <ul class="hp-benefits__inner">
+      <li>
+        <a href="#" class="hp-benefits__item">
+          <div class="hp-benefits__img">
+            <img src="images/content/benefits/kultura.png" alt="" />
+          </div>
+          <div class="hp-benefits__icon">
+            <img src="images/ico/kultura.svg" loading="lazy" alt="kultura" />
+          </div>
+          <div class="hp-benefits__title">Kultura</div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="hp-benefits__item">
+          <div class="hp-benefits__img">
+            <img src="images/content/benefits/sport.png" alt="" />
+          </div>
+          <div class="hp-benefits__icon">
+            <img src="images/ico/sport.svg" loading="lazy" alt="sport" />
+          </div>
+          <div class="hp-benefits__title">Sport</div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="hp-benefits__item">
+          <div class="hp-benefits__img">
+            <img src="images/content/benefits/kultura.png" alt="" />
+          </div>
+          <div class="hp-benefits__icon">
+            <img src="images/ico/kultura.svg" loading="lazy" alt="kultura" />
+          </div>
+          <div class="hp-benefits__title">Kultura</div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="hp-benefits__item">
+          <div class="hp-benefits__img">
+            <img src="images/content/benefits/sport.png" alt="" />
+          </div>
+          <div class="hp-benefits__icon">
+            <img src="images/ico/sport.svg" loading="lazy" alt="sport" />
+          </div>
+          <div class="hp-benefits__title">Sport</div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="hp-benefits__item">
+          <div class="hp-benefits__img">
+            <img src="images/content/benefits/kultura.png" alt="" />
+          </div>
+          <div class="hp-benefits__icon">
+            <img src="images/ico/kultura.svg" loading="lazy" alt="kultura" />
+          </div>
+          <div class="hp-benefits__title">Kultura</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="hp-promotion">
+  <div class="hp-promotion__wrap">
+  
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hp-promotion__title">Vyhrajte <br />iPhone 15 PRO</div>
+        </div>
+        <div class="col-lg-6">
+          <p class="fw-light mb-32">
+            Vyplňte krátký dotazník spokojenosti a zúčastněte se soutěže o skvělé ceny! Vyplňte
+            krátký dotazník spokojenosti a zúčastněte se soutěže o skvělé ceny!
+          </p>
+          <a href="#" class="btn btn-secondary">Chci se zapojit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="hp-events">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-48">
+      <h2 class="h2">Nadcházející eventy</h2>
+      <a class="btn btn-secondary" href="#"> Prohlédnout všechny eventy </a>
+    </div>
+    <div class="hp-events__item">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="hp-events__date">7.12.</div>
+          <div class="hp-events__title">Mikulášská párty</div>
+        </div>
+        <div class="col-lg-6">
+          <p class="fw-light text-secondary mb-32">
+            Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné vánoční atmosféry! Srdečně
+            vás zveme na náš exkluzivní firemní mikulášský večírek, který se uskuteční 7.12. v našem
+            útulném vánočním sále.
+          </p>
+          <a href="#" class="btn btn-primary-simple">Více informací</a>
+        </div>
+      </div>
+    </div>
+    <div class="hp-events__item">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="hp-events__date">22.12.</div>
+          <div class="hp-events__title">Vianočná párty</div>
+        </div>
+        <div class="col-lg-6">
+          <p class="fw-light text-secondary mb-32">
+            Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné vánoční atmosféry! Srdečně
+            vás zveme na náš exkluzivní firemní mikulášský večírek, který se uskuteční 7.12. v našem
+            útulném vánočním sále. Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné
+            vánoční atmosféry! Srdečně vás zveme na náš exkluzivní firemní mikulášský večírek, který
+            se uskuteční 7.12. v našem útulném vánočním sále.
+          </p>
+          <a href="#" class="btn btn-primary-simple">Více informací</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+      <footer
+  class="footer"
+  style="
+    background: url('./images/bg/footer.jpg') no-repeat center center / cover;
+  "
+>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <h6 class="h3 subTitleDecoration text-white">Hlavní navigace</h6>
+        <ul class="footer__list">
+          <li>
+            <a href="#">Domů</a>
+          </li>
+          <li>
+            <a href="#">O Kaprainu</a>
+          </li>
+          <li>
+            <a href="#">Aktuality</a>
+          </li>
+          <li>
+            <a href="#">Akce</a>
+          </li>
+          <li>
+            <a href="#">Adresář</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h6 class="h3 subTitleDecoration text-white">Další stránky</h6>
+        <ul class="footer__list">
+          <li>
+            <a href="#">Benefity pro zaměstnanace</a>
+          </li>
+          <li>
+            <a href="#">Volné pozice</a>
+          </li>
+          <li>
+            <a href="#">O intranetu</a>
+          </li>
+          <li>
+            <a href="#">Směrnice a formuláře</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h6 class="h3 subTitleDecoration text-white">Podpora</h6>
+        <ul class="footer__list">
+          <li>
+            <div class="text-sm fw-medium text-uppercase text-white mb-1">
+              Admin Intranetu
+            </div>
+            <a class="text-primary" href="tel:+420800800790"
+              >+420 800 800 790</a
+            >
+          </li>
+          <li>
+            <div class="text-sm fw-medium text-uppercase text-white mb-1">
+              HR Oddělení
+            </div>
+            <a class="text-primary" href="tel:+420800800790"
+              >+420 800 800 790</a
+            >
+          </li>
+          <li>
+            <div class="text-sm fw-medium text-uppercase text-white mb-1">
+              IT Oddělení
+            </div>
+            <a class="text-primary" href="tel:+420800800790"
+              >+420 800 800 790</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"
+    ></script>
+    <script defer src="js/scripts.js"></script>
+  </body>
 </html>
