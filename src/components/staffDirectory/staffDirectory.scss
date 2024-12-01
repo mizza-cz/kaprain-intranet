@@ -1,0 +1,219 @@
+.staffDirectory-filter {
+  .searchForm,
+  .searchForm input {
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  &__btn {
+    position: relative;
+    padding-right: 46px;
+    height: fit-content;
+    min-width: fit-content;
+    height: 54px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      right: 20px;
+      width: 16px;
+      height: 16px;
+      background-color: var(--color-secondary);
+      mask: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2212%22%20viewBox%3D%220%200%2020%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2011.2812L10.8467%2010.5555L20%202.70965L18.3034%200.718761L10%207.83888L1.69663%200.718761L0%202.70965L9.15332%2010.5555L10%2011.2812Z%22%20fill%3D%22%2329225C%22%2F%3E%3C%2Fsvg%3E');
+      mask-repeat: no-repeat;
+      mask-size: 16px;
+      mask-position: center;
+      transition: all 0.2s;
+    }
+    &:hover:before {
+      background-color: var(--color-light);
+    }
+  }
+  &__btn.staffDirectory-open::before {
+    transform: rotate(-180deg);
+  }
+  &__menu {
+    display: flex;
+    gap: 24px 64px;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(sm) {
+      gap: 16px;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    gap: 24px 64px;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+      margin-bottom: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+      gap: 16px;
+    }
+  }
+  &__tags {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  &__tag {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    border: 1px solid var(--color-secondary);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    padding: 17px 20px 15px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .remove-tag {
+    font-size: 0;
+    background-image: url('../images/ico/close.svg');
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-size: contain;
+    background-position: center center;
+    margin-left: 10px;
+  }
+}
+
+.staffDirectory-category {
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 2px solid var(--color-secondary);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+  &__list {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      input[type='checkbox'] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--color-secondary);
+        border-radius: 2px;
+        margin-right: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        &:checked {
+          border-color: var(--color-primary);
+          background-color: var(--color-primary);
+
+          &::after {
+            content: '';
+            background-image: url('../images/ico/close.svg');
+            font-size: 14px;
+            color: #fff;
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+        }
+      }
+
+      label {
+        color: var(--color-secondary);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        cursor: pointer;
+      }
+      label.checked {
+        color: var(--color-primary);
+      }
+    }
+  }
+}
+
+.staffDirectory-nav-open .staffDirectory-category {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.staffDirectory__item {
+  box-shadow: 0px 16px 40px 0px #00000026;
+  padding: 48px;
+  height: 100%;
+  @include media-breakpoint-down(sm) {
+    padding: 32px;
+  }
+  &-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: var(--color-secondary);
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 16px;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 128px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-primary);
+    }
+  }
+  &-info li {
+    position: relative;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      width: 16px;
+    }
+  }
+  &-info .tel::before {
+    background-image: url('../images/ico/staff-tel.svg');
+    height: 16px;
+  }
+  &-info .mail::before {
+    background-image: url('../images/ico/staff-mail.svg');
+    height: 12px;
+  }
+}
+.staffDirectory {
+  margin-bottom: 176px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px;
+  }
+}

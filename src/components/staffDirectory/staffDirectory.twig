@@ -1,0 +1,262 @@
+<section class="staffDirectory">
+  <div class="headerPage" style="background-image: url('../images/bg/staff-directory.jpg')">
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Adresář zaměstnanců</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="staffDirectory-filter">
+      <div class="staffDirectory-filter__row">
+        <div class="staffDirectory-filter__menu">
+          <div class="staffDirectory-filter__btn btn btn-primary">zobrazit filtry</div>
+          <ul class="staffDirectory-filter__tags">
+            <li>
+              <div class="staffDirectory-filter__tag">Praha</div>
+            </li>
+            <li>
+              <div class="staffDirectory-filter__tag">Brno</div>
+            </li>
+            <li>
+              <div class="staffDirectory-filter__tag">Hr oddělení</div>
+            </li>
+          </ul>
+        </div>
+        <form class="searchForm">
+          <button>
+            <img src="images/ico/search.svg" loading="lazy" alt="searchForm-btn" />
+          </button>
+          <input type="text" placeholder="Vyhledávání..." />
+        </form>
+      </div>
+    </div>
+    <form class="staffDirectory-category">
+      <div class="row g-4">
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">město</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input checked type="checkbox" id="praha" />
+              <label for="praha">Praha</label>
+            </li>
+            <li>
+              <input checked type="checkbox" id="brno" />
+              <label for="brno">Brno</label>
+            </li>
+            <li>
+              <input type="checkbox" id="ostrava" />
+              <label for="ostrava">Ostrava</label>
+            </li>
+            <li>
+              <input type="checkbox" id="berlin" />
+              <label for="berlin">Berlín</label>
+            </li>
+            <li>
+              <input type="checkbox" id="hamburg" />
+              <label for="hamburg">Hamburg</label>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">město</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input type="checkbox" id="kolin" />
+              <label for="kolin">Kolín</label>
+            </li>
+            <li>
+              <input type="checkbox" id="bratislava" />
+              <label for="bratislava">Bratislava</label>
+            </li>
+            <li>
+              <input type="checkbox" id="londyn" />
+              <label for="londyn">Londýn</label>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">Oddělení</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input type="checkbox" id="executiveOddeleni" />
+              <label for="executiveOddeleni">Executive oddělení</label>
+            </li>
+            <li>
+              <input type="checkbox" id="financeOddeleni" />
+              <label for="financeOddeleni">Finance oddělení</label>
+            </li>
+            <li>
+              <input type="checkbox" id="obchodniOddeleni" />
+              <label for="obchodniOddeleni">Obchodní oddělení</label>
+            </li>
+            <li>
+              <input checked type="checkbox" id="hrOddeleni" />
+              <label for="hrOddeleni">HR oddělení </label>
+            </li>
+            <li>
+              <input type="checkbox" id="itOddeleni" />
+              <label for="itOddeleni">IT oddělení </label>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">Oddělení</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input type="checkbox" id="marketingOddeleni" />
+              <label for="marketingOddeleni">Marketing oddělení </label>
+            </li>
+            <li>
+              <input type="checkbox" id="projektoveOddeleni" />
+              <label for="projektoveOddeleni">Projektové oddělení </label>
+            </li>
+            <li>
+              <input type="checkbox" id="udrzbyOddeleni" />
+              <label for="udrzbyOddeleni">Oddělení údržby </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+
+    <div class="row g-5 staffDirectory__inner" id="staffDirectory">
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Brno</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Happiness manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btn mx-auto js-fetchHTML btn-primary mt-8"
+      data-fetch-url="./_staffDirectory.html"
+      data-fetch-container="#staffDirectory"
+      data-fetch-limit="3"
+      data-text="načíst další aktuality"
+      data-text-fetching="Načítám..."
+      data-text-error="Omluvte chybu, nepodařilo se načíst další aktuality"
+    >
+      načíst další aktuality
+    </button>
+  </div>
+</section>

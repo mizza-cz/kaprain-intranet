@@ -1,0 +1,56 @@
+.formDate {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-secondary);
+  height: 52px;
+  position: relative;
+  width: fit-content;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    background-image: url('../images/ico/calendar.svg');
+    width: 19px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  input {
+    height: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    width: 17.5rem;
+    padding-left: 64px;
+    padding-right: 20px;
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17.6px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: all 0.3s;
+    background-color: transparent;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    &::placeholder {
+      color: var(--color-gray);
+    }
+  }
+  .input-group-addon {
+    height: 100%;
+  }
+}
+.datepicker table {
+  width: 100%;
+}
+.datepicker.dropdown-menu {
+  min-width: 17.6rem;
+}

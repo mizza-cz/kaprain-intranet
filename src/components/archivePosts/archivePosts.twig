@@ -1,0 +1,153 @@
+<section class="archivePosts">
+  <div class="headerPage" style="background-image: url('../images/bg/archive-post.jpg')">
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Aktuality</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form class="filterTags">
+      <ul class="tagsMenu">
+        <li>
+          <input name="tag" type="checkbox" id="tambuliding" />
+          <label for="tambuliding">tambuliding</label>
+        </li>
+        <li>
+          <input checked name="tag" type="checkbox" id="realEstate" />
+          <label for="realEstate">Real Estate</label>
+        </li>
+        <li>
+          <input checked name="tag" type="checkbox" id="industry" />
+          <label for="industry">Industry </label>
+        </li>
+        <li>
+          <input name="tag" type="checkbox" id="finance" />
+          <label for="finance">finance </label>
+        </li>
+        <li>
+          <input name="tag" type="checkbox" id="sport" />
+          <label for="sport">Sport & Leisure </label>
+        </li>
+        <li>
+          <input name="tag" type="checkbox" id="lifestyle" />
+          <label for="lifestyle">lifestyle </label>
+        </li>
+        <li>
+          <input name="tag" type="checkbox" id="financee" />
+          <label for="financee">finance </label>
+        </li>
+        <li>
+          <input name="tag" type="checkbox" id="lifestylee" />
+          <label for="lifestylee">lifestyle </label>
+        </li>
+      </ul>
+      <a href="#" class="filterTags__date"> seřadit podle přidání </a>
+    </form>
+
+    <ul class="archivePosts__inner" id="archivePosts">
+      <li class="archivePosts__item">
+        <div class="post">
+          <div class="post__img">
+            <img src="images/content/topstory-1.webp" loading="lazy" alt="" />
+          </div>
+          <div class="post__info">
+            <ul class="tags">
+              <li>
+                <div class="tag">Real estate</div>
+              </li>
+              <li>
+                <div class="tag">Finance</div>
+              </li>
+            </ul>
+            <h3 class="h3 text-secondary subTitleDecoration mb-3">
+              Skupina Mafra posílila svou dozorčí radu
+            </h3>
+            <p>
+              Mediální skupinu MAFRA spolu s pardubickými chemickými závody Synthesia koupila v
+              únoru tohoto roku investiční skupina Kaprain. Zatímco Synthesia byla rychle začleněna
+              do existující chemické divize Kaprainu, s fungováním mediální...
+            </p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </li>
+      <li class="archivePosts__item">
+        <div class="post">
+          <div class="post__img">
+            <img src="images/content/topstory-1.webp" loading="lazy" alt="" />
+          </div>
+          <div class="post__info">
+            <ul class="tags">
+              <li>
+                <div class="tag active">Real estate</div>
+              </li>
+              <li>
+                <div class="tag">Finance</div>
+              </li>
+            </ul>
+            <h3 class="h3 text-secondary subTitleDecoration mb-3">
+              Skupina Mafra posílila svou dozorčí radu
+            </h3>
+            <p>Mediální skupinu MAFRA spolu s pardubickými chemickými...</p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </li>
+      <li class="archivePosts__item">
+        <div class="post">
+          <div class="post__img">
+            <img src="images/content/topstory-2.webp" loading="lazy" alt="" />
+          </div>
+          <div class="post__info">
+            <ul class="tags">
+              <li>
+                <div class="tag active">Industry</div>
+              </li>
+            </ul>
+            <h3 class="h3 text-secondary subTitleDecoration mb-3">
+              Investiční skupina Kaprain dokončila...
+            </h3>
+            <p>Investiční skupina Kaprain dokončila na konci roku nákup společnosti...</p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </li>
+      <li class="archivePosts__item">
+        <div class="post">
+          <div class="post__img">
+            <img src="images/content/topstory-3.webp" loading="lazy" alt="" />
+          </div>
+          <div class="post__info">
+            <ul class="tags">
+              <li>
+                <div class="tag active">Industry</div>
+              </li>
+            </ul>
+            <h3 class="h3 text-secondary subTitleDecoration mb-3">
+              Kaprain a Penta Real Estate společně...
+            </h3>
+            <p>
+              Společnosti Kaprain a Penta Real Estate uzavřely dohodu o Kaprain a Penta Real Estate
+              uzavřely dohodu o
+            </p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="btn mx-auto js-fetchHTML btn-primary mt-8"
+      data-fetch-url="./_archivePosts.html"
+      data-fetch-container="#archivePosts"
+      data-fetch-limit="3"
+      data-text="načíst další aktuality"
+      data-text-fetching="Načítám..."
+      data-text-error="Omluvte chybu, nepodařilo se načíst další aktuality"
+    >
+      načíst další aktuality
+    </button>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+.headerPage {
+  padding-top: 177px;
+  padding-bottom: 88px;
+  margin-bottom: 88px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-top: 88px;
+  }
+  .h1 {
+    position: relative;
+    padding-bottom: 32px;
+    color: var(--color-light);
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 16px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 256px;
+      height: 2px;
+      background-color: var(--color-primary);
+      @include media-breakpoint-down(lg) {
+        width: 128px;
+      }
+    }
+  }
+}

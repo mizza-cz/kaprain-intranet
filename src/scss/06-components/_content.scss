@@ -1,0 +1,98 @@
+.o-content {
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+  blockquote {
+    margin: 64px 0;
+    @include media-breakpoint-down(lg) {
+      margin: 40px 0;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin: 64px auto;
+    object-fit: cover;
+    @include media-breakpoint-down(lg) {
+      margin: 40px auto;
+    }
+  }
+  p img {
+    margin: 0;
+  }
+  p + p {
+    margin-top: 32px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 24px;
+    }
+  }
+}
+
+.h1,
+.o-content h1 {
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 110px;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 56px;
+    line-height: 61.6px;
+  }
+}
+
+.h2,
+.o-content h2 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 61.6px;
+  color: var(--color-secondary);
+  @include media-breakpoint-down(xl) {
+    font-size: 32px;
+    line-height: normal;
+  }
+}
+
+.h3,
+.o-content h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.text-xs {
+  font-size: 12px;
+  line-height: 15px;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 15.4px;
+}
+.text-md {
+  font-size: 16px;
+  line-height: 24px;
+}
+.text-lg {
+  font-size: 18px;
+  line-height: 32px;
+}
+.text-xl {
+  font-size: 22px;
+  line-height: 39.6px;
+}
+.text-xxl {
+  font-size: 24px;
+  line-height: 43.2px;
+}

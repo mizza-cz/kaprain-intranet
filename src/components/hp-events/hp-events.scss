@@ -1,0 +1,41 @@
+.hp-events {
+  margin-bottom: 176px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 88px;
+  }
+  &__item {
+    box-shadow: 0px 16px 40px 0px #00000026;
+    padding: 48px;
+  }
+  &__item + &__item {
+    margin-top: 32px;
+  }
+  &__date {
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 105.6px;
+    position: relative;
+    padding-bottom: 36px;
+    margin-bottom: 32px;
+    color: var(--color-secondary);
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 4px;
+      max-width: 512px;
+      width: 100%;
+      background-color: var(--color-primary);
+      bottom: 0;
+    }
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    
+  }
+}

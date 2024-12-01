@@ -1,0 +1,49 @@
+/*! purgecss start ignore */
+.accordion {
+  &-item {
+    border: 1px solid var(--color-secondary) !important;
+  }
+  &-item + &-item {
+    margin-top: 16px;
+  }
+  &-button {
+    outline: none !important;
+    cursor: pointer;
+    box-shadow: none !important;
+
+    background-color: var(--color-light);
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 39px;
+    padding: 16px 72px 16px 32px !important;
+  }
+  &-button:not(.collapsed) {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    &::after {
+      background-color: var(--color-light);
+    }
+  }
+  &-button::after {
+    //  display: none;
+    background-image: none;
+    background-color: var(--color-secondary);
+    mask: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2212%22%20viewBox%3D%220%200%2020%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2011.2812L10.8467%2010.5555L20%202.70965L18.3034%200.718761L10%207.83888L1.69663%200.718761L0%202.70965L9.15332%2010.5555L10%2011.2812Z%22%20fill%3D%22%2329225C%22%2F%3E%3C%2Fsvg%3E');
+    mask-repeat: no-repeat;
+    width: 22px;
+    height: 12px;
+    right: 32px;
+    position: absolute;
+  }
+  &-body {
+    padding: 32px;
+    p + p {
+      margin-top: 40px;
+    }
+    p {
+      display: block;
+    }
+  }
+}
+/*! purgecss end ignore */

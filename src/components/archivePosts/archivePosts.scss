@@ -1,0 +1,89 @@
+.archivePosts {
+  margin-bottom: 176px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    margin-left: -16px;
+    margin-right: -16px;
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(lg) {
+      gap: 32px 0;
+    }
+  }
+}
+
+.archivePosts__item {
+  padding: 0 16px;
+
+  &:first-child {
+    margin-bottom: 48px;
+    max-width: 100%;
+    flex: 100%;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-only(md) {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    .post {
+      display: flex;
+      @include media-breakpoint-down(lg) {
+        display: block;
+      }
+    }
+    .post__img {
+      max-width: 50%;
+      flex: 0 0 50%;
+      @include media-breakpoint-down(lg) {
+        max-width: 100%;
+        flex: 100%;
+      }
+    }
+    .post__info {
+      max-width: 50%;
+      flex: 0 0 50%;
+      @include media-breakpoint-down(lg) {
+        max-width: 100%;
+        flex: 100%;
+      }
+    }
+    .post__info p {
+      -webkit-line-clamp: 4;
+      max-height: calc(1.5em * 4);
+    }
+    .post__img:after {
+      width: 24rem;
+      height: 22rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include media-breakpoint-down(lg) {
+        width: 12.5rem;
+        height: 11rem;
+      }
+    }
+  }
+  &:not(:first-child) {
+    margin-bottom: 32px;
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+    @include media-breakpoint-only(lg) {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    @include media-breakpoint-only(md) {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      flex: 100%;
+    }
+  }
+}

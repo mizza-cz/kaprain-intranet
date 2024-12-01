@@ -1,0 +1,36 @@
+{% extends "@components/base/base.twig" %} {% set title = "07.0_none-available-events" %} {% block
+main %}
+
+<section class="eventCalendar">
+  <div class="headerPage" style="background-image: url('../images/bg/event-calendar.jpg')">
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Kalendář akcí</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="mb-8 d-flex justify-content-between gap-3 flex-wrap">
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#" class="btn btn-primary"> nadcházející akce </a>
+        <a href="#" class="btn btn-secondary">minulé akce</a>
+      </div>
+      <form class="date formDate">
+        <input type="text" class="" placeholder="Hledat podle data..." />
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-th"></span>
+        </div>
+      </form>
+    </div>
+    <div class="noneEvents">
+      <div class="noneEvents__info">
+        <h2>Žádné nadcházející události...</h2>
+        <span> Pilně pracujeme na plánování dalších akcí. </span>
+      </div>
+      <a href="#" class="btn btn-secondary">Projděte si minulé události</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

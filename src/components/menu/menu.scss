@@ -1,0 +1,123 @@
+.is-nav-open .menu {
+  visibility: visible;
+  opacity: 1;
+  // display: block;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  background-color: var(--color-light);
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  // display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+  &__wrapper {
+    max-width: 115.2rem;
+    margin: 0 auto;
+    padding: 64px 64px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+  }
+}
+
+.menu__list {
+  li + li {
+    margin-top: 8px;
+  }
+  a {
+    font-size: 24px;
+    line-height: 43.2px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+    color: var(--color-secondary);
+    position: relative;
+    display: block;
+    width: fit-content;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      width: 104%;
+      height: 2px;
+      left: -1px;
+      bottom: 1px;
+      transition: all 0.2s;
+    }
+    &:hover::before {
+      background-color: var(--color-primary);
+    }
+  }
+  .active {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+}
+
+.menu__support {
+  li + li {
+    margin-top: 32px;
+  }
+  li {
+    padding-left: 56px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: #f9f6ee;
+      background-repeat: no-repeat;
+
+      background-position: center center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  a {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: var(--color-primary);
+    text-decoration-color: transparent;
+    margin-top: 4px;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+  span {
+    display: block;
+    color: var(--color-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15.4px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  &-it::before {
+    background-image: url('../images/ico/it.svg');
+    background-size: 21px 20px;
+  }
+  &-admin::before {
+    background-image: url('../images/ico/admin.svg');
+    background-size: 21px 21px;
+  }
+  &-hr::before {
+    background-image: url('../images/ico/telephone.svg');
+    background-size: 20px 20px;
+  }
+}

@@ -1,0 +1,87 @@
+<section class="photoalbum-section">
+  <div class="headerPage" style="background-image: url('../images/bg/photoalbum.jpg')">
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Foto z akcí</h1>
+      </div>
+    </div>
+  </div>
+  <div class="photoalbum-section__inner">
+    <div class="container">
+      <div class="mb-8">
+        <form class="date formDate ms-auto">
+          <input type="text" class="" placeholder="Hledat podle data..." />
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-th"></span>
+          </div>
+        </form>
+      </div>
+      <ul class="photoalbum-section__row" id="photoalbum">
+        <li>
+          <div class="photoalbum-section__item">
+            <div class="photoalbum-section__img">
+              <img src="images/content/photoalbum-1.png" loading="lazy" alt="album" />
+            </div>
+            <div class="photoalbum-section__info">
+              <div class="mb-32">18. 10. - 22.10. 2024</div>
+              <h2 class="h3 subTitleDecoration text-secondary mb-3">Podzimní teambuilding</h2>
+              <div class="photoalbum-section__place">Národný park Šumava</div>
+              <a href="#" class="btn btn-primary-simple">prohlédnout foto</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="photoalbum-section__item">
+            <div class="photoalbum-section__img">
+              <img src="images/content/photoalbum-2.png" loading="lazy" alt="album" />
+            </div>
+            <div class="photoalbum-section__info">
+              <div class="mb-32">09. 10. 2024</div>
+              <h2 class="h3 subTitleDecoration text-secondary mb-3">Volejbalový turnaj</h2>
+              <div class="photoalbum-section__place">Náplavka</div>
+              <a href="#" class="btn btn-primary-simple">prohlédnout foto</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="photoalbum-section__item">
+            <div class="photoalbum-section__img">
+              <img src="images/content/photoalbum-3.png" loading="lazy" alt="album" />
+            </div>
+            <div class="photoalbum-section__info">
+              <div class="mb-32">11. 7. 2024</div>
+              <h2 class="h3 subTitleDecoration text-secondary mb-3">Fotbalový turnaj</h2>
+              <div class="photoalbum-section__place">Strahovský stadion</div>
+              <a href="#" class="btn btn-primary-simple">prohlédnout foto</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="photoalbum-section__item">
+            <div class="photoalbum-section__img">
+              <img src="images/content/photoalbum-4.png" loading="lazy" alt="album" />
+            </div>
+            <div class="photoalbum-section__info">
+              <div class="mb-32">23. 04. - 27.04 2024</div>
+              <h2 class="h3 subTitleDecoration text-secondary mb-3">Jarní teambuilding</h2>
+              <div class="photoalbum-section__place">Český ráj</div>
+              <a href="#" class="btn btn-primary-simple">prohlédnout foto</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="btn mx-auto js-fetchHTML btn-primary mt-8"
+        data-fetch-url="./_photoalbum.html"
+        data-fetch-container="#photoalbum"
+        data-fetch-limit="3"
+        data-text="načíst další aktuality"
+        data-text-fetching="Načítám..."
+        data-text-error="Omluvte chybu, nepodařilo se načíst další aktuality"
+      >
+        načíst další aktuality
+      </button>
+    </div>
+  </div>
+</section>

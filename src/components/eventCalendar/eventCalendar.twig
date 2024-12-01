@@ -1,0 +1,94 @@
+<section class="eventCalendar">
+  <div class="headerPage" style="background-image: url('../images/bg/event-calendar.jpg')">
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Kalendář akcí</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="mb-8 d-flex justify-content-between gap-3 flex-wrap">
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#" class="btn btn-primary"> nadcházející akce </a>
+        <a href="#" class="btn btn-secondary">minulé akce</a>
+      </div>
+      <form class="date formDate">
+        <input type="text" class="" placeholder="Hledat podle data..." />
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-th"></span>
+        </div>
+      </form>
+    </div>
+    <div class="eventCalendar__inner" id="eventCalendar">
+      <div class="eventCalendar__item">
+        <div class="eventCalendar__img">
+          <img src="images/content/calendar-1.png" loading="lazy" alt="" />
+        </div>
+        <div class="eventCalendar__item-wrap">
+          <div class="eventCalendar__info">
+            <h2 class="text-secondary">7.12. 2024</h2>
+            <div class="eventCalendar__name">Mikulášská párty</div>
+          </div>
+          <div class="eventCalendar__text">
+            <p class="fw-light mb-32">
+              Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné vánoční atmosféry! Srdečně
+              vás zveme na náš exkluzivní firemní mikulášský večírek, který se uskuteční 7.12. v
+              našem útulném vánočním sále.
+            </p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </div>
+      <div class="eventCalendar__item">
+        <div class="eventCalendar__img">
+          <img src="images/content/calendar-1.png" loading="lazy" alt="" />
+        </div>
+        <div class="eventCalendar__item-wrap">
+          <div class="eventCalendar__info">
+            <h2 class="text-secondary">22.12. 2024</h2>
+            <div class="eventCalendar__name">Vánoční večírek</div>
+          </div>
+          <div class="eventCalendar__text">
+            <p class="fw-light mb-32">
+              Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné vánoční atmosféry! Srdečně
+              vás zveme na náš exkluzivní firemní mikulášský večírek, který se uskuteční 7.12. v
+              našem útulném vánočním sále.
+            </p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </div>
+      <div class="eventCalendar__item">
+        <div class="eventCalendar__img">
+          <img src="images/content/calendar-1.png" loading="lazy" alt="" />
+        </div>
+        <div class="eventCalendar__item-wrap">
+          <div class="eventCalendar__info">
+            <h2 class="text-secondary">10.04. 2024</h2>
+            <div class="eventCalendar__name">Bowling teambuilging</div>
+          </div>
+          <div class="eventCalendar__text">
+            <p class="fw-light mb-32">
+              Čaká nás popoludnie plné zábavy a športu, kde si spoločne zahráme volejbal! Nezáleží
+              na tom, či si profík alebo nováčik – ide nám hlavne o dobrú náladu a tímového ducha.
+            </p>
+            <a href="#" class="btn btn-primary-simple">Více informací</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="btn mx-auto js-fetchHTML btn-primary mt-8"
+      data-fetch-url="./_eventCalendar.html"
+      data-fetch-container="#eventCalendar"
+      data-fetch-limit="3"
+      data-text="načíst další události"
+      data-text-fetching="Načítám..."
+      data-text-error="Omluvte chybu, nepodařilo se načíst další události"
+    >
+      načíst další události
+    </button>
+  </div>
+</section>
