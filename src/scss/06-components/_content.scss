@@ -2,7 +2,7 @@
   &::after {
     display: table;
     clear: both;
-    content: '';
+    content: "";
   }
   > :first-child {
     margin-top: 0;
@@ -11,6 +11,13 @@
     margin-bottom: 0;
   }
   blockquote {
+    margin: 64px 0;
+    @include media-breakpoint-down(lg) {
+      margin: 40px 0;
+    }
+  }
+  h2,
+  h3 {
     margin: 64px 0;
     @include media-breakpoint-down(lg) {
       margin: 40px 0;

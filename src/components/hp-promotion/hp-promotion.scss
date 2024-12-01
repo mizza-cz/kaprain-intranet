@@ -1,17 +1,23 @@
 .hp-promotion {
-  background-image: url('../images/bg/promotion.jpg');
+  background-image: url("../images/bg/promotion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-light);
   margin-bottom: 176px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 88px;
+  }
   &__wrap {
     max-width: 1728px;
     margin: 0 auto;
     position: relative;
     padding: 132px 0;
     overflow: hidden;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 48px;
+    }
     &::after {
-      content: 'Soutež';
+      content: "Soutež";
       position: absolute;
       bottom: -36px;
       left: -24px;
@@ -21,17 +27,24 @@
       color: rgba(0, 0, 0, 0);
       -webkit-text-stroke: 2px rgba(202, 174, 91, 0.75);
       font-family: sans-serif;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
       height: 458px;
       width: 300px;
-      background-image: url('../images/ico/prom.svg');
+      background-image: url("../images/ico/prom.svg");
       background-repeat: no-repeat;
       background-size: contain;
+      @include media-breakpoint-down(lg) {
+        height: 320px;
+        width: 220px;
+      }
     }
   }
   &__title {
@@ -43,8 +56,13 @@
     letter-spacing: 0.04em;
     position: relative;
     padding-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 16px;
+    }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0px;
       left: 0;

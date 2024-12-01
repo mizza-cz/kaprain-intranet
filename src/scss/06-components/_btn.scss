@@ -10,6 +10,11 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
+  @include media-breakpoint-down(lg) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px 16px 13px;
+  }
 }
 .btn.btn-arrow {
   font-size: 18px;
@@ -20,7 +25,7 @@
     padding: 14px 16px;
   }
   &::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 65px;
     position: absolute;
@@ -77,7 +82,7 @@
     background-color: var(--color-light);
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 20px;
     width: 16px;
@@ -100,7 +105,7 @@
     background-color: var(--color-light);
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 20px;
     width: 16px;

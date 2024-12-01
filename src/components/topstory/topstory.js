@@ -1,9 +1,9 @@
-$('.topstory__inner').slick({
+$(".topstory__inner").slick({
   slidesToShow: 1,
   arrows: false,
   infinite: !0,
   autoplay: !0,
-  cssEase: 'linear',
+  cssEase: "linear",
   speed: 500,
   fade: !0,
   dots: true,

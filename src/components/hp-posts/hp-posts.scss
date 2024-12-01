@@ -3,6 +3,7 @@
   margin-bottom: 176px;
   @include media-breakpoint-down(lg) {
     margin-top: 40px;
+    margin-bottom: 88px;
   }
 }
 .post {
@@ -19,17 +20,17 @@
       object-fit: cover;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       top: 0;
-      background-image: url('../images/ico/quotes-post.svg');
+      background-image: url("../images/ico/quotes-post.svg");
       width: 200px;
       height: 176px;
       z-index: 1;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;

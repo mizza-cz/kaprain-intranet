@@ -6,6 +6,9 @@
   &__item {
     box-shadow: 0px 16px 40px 0px #00000026;
     padding: 48px;
+    @include media-breakpoint-down(lg) {
+      padding: 32px;
+    }
   }
   &__item + &__item {
     margin-top: 32px;
@@ -18,8 +21,12 @@
     padding-bottom: 36px;
     margin-bottom: 32px;
     color: var(--color-secondary);
+    @include media-breakpoint-down(lg) {
+      font-size: 66px;
+      line-height: normal;
+    }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       height: 4px;
@@ -36,6 +43,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-secondary);
-    
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  .hp-headerSection {
+    gap: 32px;
   }
 }

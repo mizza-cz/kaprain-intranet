@@ -1,0 +1,180 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(#f6f6f680, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  &-content {
+    padding: 48px;
+    background-color: var(--color-light);
+    box-shadow: 0px 16px 40px 0px #00000026;
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      padding: 48px 24px;
+    }
+    .h3 {
+      padding-right: 72px;
+    }
+  }
+  &__perex {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43.2px;
+    margin-bottom: 32px;
+    color: var(--color-secondary);
+  }
+  .close {
+    position: absolute;
+    border: 1px solid var(--color-secondary);
+    width: 52px;
+    height: 52px;
+    right: 48px;
+    cursor: pointer;
+    top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.3s;
+
+    @include media-breakpoint-down(md) {
+      right: 24px;
+      top: 24px;
+      width: 44px;
+      height: 44px;
+    }
+    &:hover {
+      background-color: var(--color-secondary);
+      &::before {
+        background-color: var(--color-light);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: var(--color-secondary);
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s;
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12.9529 14.583L7.9136 9.54373L3.07193 14.3854L1.61449 12.928L6.45616 8.08629L1.41687 3.047L3.04723 1.41664L8.08652 6.45593L12.9282 1.61426L14.3856 3.0717L9.54396 7.91337L14.5833 12.9527L12.9529 14.583Z" fill="black"/></svg>')
+        no-repeat center;
+      @include media-breakpoint-down(md) {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  &-footer {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 32px;
+    border-top: 2px solid var(--color-secondary);
+    flex-wrap: nowrap;
+    .btn {
+      width: 100%;
+    }
+  }
+  .radio-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+  .radio-wrapper {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+
+    cursor: pointer;
+
+    text-align: center;
+    transition: all 0.3s;
+  }
+
+  .radio-wrapper input[type="radio"] {
+    display: none;
+  }
+
+  .radio-wrapper .radio-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .radio-letter {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+    background: var(--color-secondary);
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    border: 1px solid var(--color-secondary);
+  }
+
+  .radio-text {
+    color: var(--color-secondary);
+    width: 100%;
+    text-align: center;
+    padding-inline: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: 0.04em;
+    transition: all 0.3s;
+    border: 1px solid var(--color-secondary);
+  }
+
+  .radio-wrapper input[type="radio"]:checked + .radio-label {
+    .radio-letter {
+      border: 1px solid var(--color-primary);
+      background: var(--color-primary);
+      color: var(--color-light);
+    }
+    .radio-text {
+      border: 1px solid var(--color-primary);
+      border-left: 1px solid var(--color-light);
+      background: var(--color-primary);
+      color: var(--color-light);
+    }
+  }
+
+  .radio-wrapper:hover {
+    .radio-text {
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+    }
+    .radio-letter {
+      background-color: var(--color-primary);
+      color: var(--color-light);
+      border: 1px solid var(--color-primary);
+    }
+  }
+}

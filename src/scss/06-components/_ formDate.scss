@@ -8,11 +8,12 @@
   @include media-breakpoint-down(sm) {
     width: 100%;
   }
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 20px;
-    background-image: url('../images/ico/calendar.svg');
+    background-image: url("../images/ico/calendar.svg");
     width: 19px;
     height: 20px;
     background-repeat: no-repeat;

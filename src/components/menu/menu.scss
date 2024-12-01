@@ -20,6 +20,14 @@
     max-width: 115.2rem;
     margin: 0 auto;
     padding: 64px 64px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
   &__title {
     text-transform: uppercase;
@@ -28,12 +36,18 @@
     line-height: 15px;
     letter-spacing: 0.04em;
     margin-bottom: 24px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 16px;
+    }
   }
 }
 
 .menu__list {
   li + li {
     margin-top: 8px;
+    @include media-breakpoint-down(lg) {
+      margin: 0;
+    }
   }
   a {
     font-size: 24px;
@@ -45,8 +59,11 @@
     position: relative;
     display: block;
     width: fit-content;
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: transparent;
       width: 104%;
@@ -73,7 +90,7 @@
     padding-left: 56px;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 40px;
@@ -109,15 +126,15 @@
     text-transform: uppercase;
   }
   &-it::before {
-    background-image: url('../images/ico/it.svg');
+    background-image: url("../images/ico/it.svg");
     background-size: 21px 20px;
   }
   &-admin::before {
-    background-image: url('../images/ico/admin.svg');
+    background-image: url("../images/ico/admin.svg");
     background-size: 21px 21px;
   }
   &-hr::before {
-    background-image: url('../images/ico/telephone.svg');
+    background-image: url("../images/ico/telephone.svg");
     background-size: 20px 20px;
   }
 }

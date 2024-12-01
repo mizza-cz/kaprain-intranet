@@ -18,7 +18,7 @@
       padding-bottom: 16px;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -32,6 +32,14 @@
   }
 }
 
-
-
- 
+.hp-headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+}

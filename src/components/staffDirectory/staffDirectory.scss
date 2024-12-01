@@ -7,7 +7,7 @@
   }
   &__btn {
     position: relative;
-    padding-right: 46px;
+    padding: 1.0625rem 46px 0.9375rem 20px !important;
     height: fit-content;
     min-width: fit-content;
     height: 54px;
@@ -15,13 +15,13 @@
       width: 100%;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       right: 20px;
       width: 16px;
       height: 16px;
       background-color: var(--color-secondary);
-      mask: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2212%22%20viewBox%3D%220%200%2020%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2011.2812L10.8467%2010.5555L20%202.70965L18.3034%200.718761L10%207.83888L1.69663%200.718761L0%202.70965L9.15332%2010.5555L10%2011.2812Z%22%20fill%3D%22%2329225C%22%2F%3E%3C%2Fsvg%3E');
+      mask: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2212%22%20viewBox%3D%220%200%2020%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2011.2812L10.8467%2010.5555L20%202.70965L18.3034%200.718761L10%207.83888L1.69663%200.718761L0%202.70965L9.15332%2010.5555L10%2011.2812Z%22%20fill%3D%22%2329225C%22%2F%3E%3C%2Fsvg%3E");
       mask-repeat: no-repeat;
       mask-size: 16px;
       mask-position: center;
@@ -75,7 +75,7 @@
   }
   .remove-tag {
     font-size: 0;
-    background-image: url('../images/ico/close.svg');
+    background-image: url("../images/ico/close.svg");
     width: 16px;
     height: 16px;
     display: block;
@@ -111,7 +111,7 @@
       align-items: center;
       margin-bottom: 10px;
 
-      input[type='checkbox'] {
+      input[type="checkbox"] {
         appearance: none;
         width: 20px;
         height: 20px;
@@ -129,8 +129,8 @@
           background-color: var(--color-primary);
 
           &::after {
-            content: '';
-            background-image: url('../images/ico/close.svg');
+            content: "";
+            background-image: url("../images/ico/close.svg");
             font-size: 14px;
             color: #fff;
             width: 16px;
@@ -178,7 +178,7 @@
     padding-bottom: 18px;
     margin-bottom: 16px;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 2px;
       width: 128px;
@@ -193,7 +193,7 @@
     display: flex;
     align-items: center;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       background-repeat: no-repeat;
@@ -203,11 +203,11 @@
     }
   }
   &-info .tel::before {
-    background-image: url('../images/ico/staff-tel.svg');
+    background-image: url("../images/ico/staff-tel.svg");
     height: 16px;
   }
   &-info .mail::before {
-    background-image: url('../images/ico/staff-mail.svg');
+    background-image: url("../images/ico/staff-mail.svg");
     height: 12px;
   }
 }
