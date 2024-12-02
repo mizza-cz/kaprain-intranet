@@ -38,6 +38,9 @@
   justify-content: space-between;
   margin-bottom: 68px;
   overflow: hidden;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
   @include media-breakpoint-down(md) {
     flex-direction: column;
     justify-content: center;

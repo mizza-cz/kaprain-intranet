@@ -1,0 +1,75 @@
+.event-section {
+  margin-bottom: 176px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 32px;
+    flex-wrap: wrap-reverse;
+  }
+  &__state {
+    position: relative;
+    color: var(--color-secondary);
+    padding-right: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: var(--color-primary);
+      width: 32px;
+      height: 32px;
+      right: 0;
+      background-image: url("../images/ico/check.svg");
+      background-repeat: no-repeat;
+      background-size: 16px 12px;
+      background-position: center center;
+    }
+  }
+  &__date {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--color-secondary);
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-primary);
+      width: 288px;
+      height: 4px;
+    }
+  }
+  .photoalbum-section__img {
+    aspect-ratio: 512/342;
+  }
+  .photoalbum-section__img,
+  .photoalbum-section__info {
+    max-width: 50%;
+    flex: 0 0 50%;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      flex: 100%;
+    }
+  }
+  .photoalbum-section__item {
+    margin-top: 64px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+    }
+  }
+}

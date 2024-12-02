@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>17.0_benefits - Kaprain Intranet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!--****** Favicon ******-->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+
+	<!--****** Fonts ******-->
+
+	<!--****** Styles  ******-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<!--****** Styles  ******-->
+
+	<!--****** Scripts  ******-->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+	<!-- ****** scripts ****** -->
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="header__inner">
+				<a class="header__logo" href="/">
+					<img src="images/ico/logo.svg" alt="logo" />
+				</a>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li>
+							<a href="#">O Kaprainu</a>
+						</li>
+						<li>
+							<a href="#">Aktuality</a>
+						</li>
+						<li>
+							<a href="#">Akce</a>
+						</li>
+						<li>
+							<a href="#">Adresář</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__right">
+					<a class="btn btn-secondary d-md-block d-none" href="#">
+						Můj personální portál
+					</a>
+
+					<button class="c-header__opener js-header__opener" type="button">
+						<span></span>
+					</button>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu__wrapper">
+					<a class="btn btn-secondary d-block d-md-none mb-4" href="#">
+						Můj personální portál
+					</a>
+					<div class="row g-5">
+						<div class="col-lg-4">
+							<div class="menu__title">Hlavní navigace</div>
+							<ul class="menu__list">
+								<li>
+									<a class="active" href="#">Domů</a>
+								</li>
+								<li>
+									<a href="#">O Kaprainu</a>
+								</li>
+								<li>
+									<a href="#">Aktuality</a>
+								</li>
+								<li>
+									<a href="#">Akce</a>
+								</li>
+								<li>
+									<a href="#">Adresář</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<div class="menu__title">Další podstránky</div>
+							<ul class="menu__list">
+								<li>
+									<a href="#">Benefity pro zaměstnanace</a>
+								</li>
+								<li>
+									<a href="#">Volné pozice</a>
+								</li>
+								<li>
+									<a href="#">O intranetu</a>
+								</li>
+								<li>
+									<a href="#">Směrnice a formuláře</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<div class="menu__title">zaměstnanecká podpora</div>
+							<ul class="menu__support">
+								<li class="menu__support-admin">
+									<span> Spojte se s Adminom Intranetu </span>
+									<a href="tel:+420800800790">+420 800 800 790</a>
+								</li>
+								<li class="menu__support-hr">
+									<span> Spojte se s Vaším HR Oddělením </span>
+									<a href="tel:+420800800800">+420 800 800 800</a>
+								</li>
+								<li class="menu__support-it">
+									<span>Spojte se s Vaším IT Oddělením</span>
+									<a href="tel:+420810810810">+420 810 810 810</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<section class="archiveBenefits">
+				<div class="headerPage" style="background-image: url('./images/bg/benefits.jpg')">
+					<div class="container">
+						<div class="headerPage__inner">
+							<h1 class="h1 text-white">Benefity</h1>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<form class="filterTags">
+						<ul class="tagsMenu">
+							<li>
+								<input name="tag" type="checkbox" id="activni" />
+								<label for="activni">Aktivní</label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="neaktivni" />
+								<label for="neaktivni">NeAktivní</label>
+							</li>
+							<li>
+								<input checked name="tag" type="checkbox" id="obecne" />
+								<label for="obecne">Obecné </label>
+							</li>
+							<li>
+								<input checked name="tag" type="checkbox" id="sport" />
+								<label for="sport">Sport </label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="lifestyle" />
+								<label for="lifestyle">lifestyle </label>
+							</li>
+							<li>
+								<input checked name="tag" type="checkbox" id="sleva" />
+								<label for="sleva">Slevový kód </label>
+							</li>
+
+							<li>
+								<input checked name="tag" type="checkbox" id="vstupenky" />
+								<label for="vstupenky">Vstupenky </label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="baety" />
+								<label for="baety">Baeuty </label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="zdravie" />
+								<label for="zdravie">Zdravie </label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="lifestylee" />
+								<label for="lifestylee">lifestyle </label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="vacation" />
+								<label for="vacation">Cestovanie </label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="priroda" />
+								<label for="priroda">Príroda </label>
+							</li>
+							<li>
+								<input name="tag" type="checkbox" id="jidlo" />
+								<label for="jidlo">Jídlo </label>
+							</li>
+						</ul>
+						<a href="#" class="filterTags__date"> seřadit podle přidání </a>
+					</form>
+
+					<ul class="archiveBenefits__inner" id="archiveBenefits">
+						<li class="archiveBenefits__col">
+							<div class="archiveBenefits__item">
+								<div class="archiveBenefits__img">
+									<img src="images/content/dovolena.png" alt="dovolena" />
+									<span class="activeBenefit">Aktivní</span>
+									<div class="archiveBenefits__icon">
+										<img src="images/ico/dovolena.svg" alt="" />
+									</div>
+								</div>
+								<div class="archiveBenefits__info">
+									<ul class="tags">
+										<li>
+											<div class="tag active">obecné</div>
+										</li>
+										<li>
+											<div class="tag">zdraví</div>
+										</li>
+									</ul>
+									<h2 class="h3 subTitleDecoration text-secondary mb-3">
+										25 dní dovolené
+									</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<div class="archiveBenefits__links">
+										<a href="#" class="btn btn-primary-simple">Více informací</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="archiveBenefits__col">
+							<div class="archiveBenefits__item">
+								<div class="archiveBenefits__img">
+									<img src="images/content/sickday.png" alt="dovolena" />
+									<div class="archiveBenefits__icon">
+										<img src="images/ico/sickday.svg" alt="" />
+									</div>
+									<span class="activeBenefit">Aktivní</span>
+								</div>
+								<div class="archiveBenefits__info">
+									<ul class="tags">
+										<li>
+											<div class="tag active">obecné</div>
+										</li>
+										<li>
+											<div class="tag">zdraví</div>
+										</li>
+									</ul>
+									<h2 class="h3 subTitleDecoration text-secondary mb-3">
+										3x Sick day
+									</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet,
+										consectetur adipiscing elit...
+									</p>
+									<div class="archiveBenefits__links">
+										<a href="#" class="btn btn-primary-simple">Více informací</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="archiveBenefits__col">
+							<div class="archiveBenefits__item">
+								<div class="archiveBenefits__img">
+									<img src="images/content/sport.png" alt="dovolena" />
+									<div class="archiveBenefits__icon">
+										<img src="images/ico/miltisport.svg" alt="" />
+									</div>
+								</div>
+								<div class="archiveBenefits__info">
+									<ul class="tags">
+										<li>
+											<div class="tag active">Sport</div>
+										</li>
+									</ul>
+									<h2 class="h3 subTitleDecoration text-secondary mb-3">
+										Multisport karta
+									</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit sit amet,
+										consectetur adipiscing elit...
+									</p>
+									<div class="archiveBenefits__links">
+										<a href="#" class="btn btn-primary-simple">Více informací</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="archiveBenefits__col">
+							<div class="archiveBenefits__item">
+								<div class="archiveBenefits__img">
+									<img src="images/content/benefits/kultura.png" alt="dovolena" />
+									<span class="activeBenefit">Aktivní</span>
+									<div class="archiveBenefits__icon">
+										<img src="images/ico/kultura.svg" alt="" />
+									</div>
+								</div>
+								<div class="archiveBenefits__info">
+									<ul class="tags">
+										<li>
+											<div class="tag">Kultura</div>
+										</li>
+										<li>
+											<div class="tag">Divadlo</div>
+										</li>
+										<li>
+											<div class="tag active">Slevový kód</div>
+										</li>
+									</ul>
+									<h2 class="h3 subTitleDecoration text-secondary mb-3">
+										Prodaná nevěsta
+									</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<div class="archiveBenefits__links">
+										<a href="#" class="btn btn-primary-simple">Více informací</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="archiveBenefits__col">
+							<div class="archiveBenefits__item">
+								<div class="archiveBenefits__img">
+									<img src="images/content/benefits/kultura.png" alt="dovolena" />
+									<span class="activeBenefit">Aktivní</span>
+									<div class="archiveBenefits__icon">
+										<img src="images/ico/kultura.svg" alt="" />
+									</div>
+								</div>
+								<div class="archiveBenefits__info">
+									<ul class="tags">
+										<li>
+											<div class="tag">Kultura</div>
+										</li>
+										<li>
+											<div class="tag">Kino</div>
+										</li>
+										<li>
+											<div class="tag active">Vstupenky</div>
+										</li>
+									</ul>
+									<h2 class="h3 subTitleDecoration text-secondary mb-3">Vlny</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<div class="archiveBenefits__links">
+										<a href="#" class="btn btn-primary-simple">Více informací</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="archiveBenefits__col">
+							<div class="archiveBenefits__item">
+								<div class="archiveBenefits__img">
+									<img src="images/content/hokey.png" alt="dovolena" />
+
+									<div class="archiveBenefits__icon">
+										<img src="images/ico/kultura.svg" alt="" />
+									</div>
+								</div>
+								<div class="archiveBenefits__info">
+									<ul class="tags">
+										<li>
+											<div class="tag">Kultura</div>
+										</li>
+										<li>
+											<div class="tag active">Sport</div>
+										</li>
+										<li>
+											<div class="tag">Slevový kód</div>
+										</li>
+									</ul>
+									<h2 class="h3 subTitleDecoration text-secondary mb-3">
+										Česko vs. Švýcarsko
+									</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<div class="archiveBenefits__links">
+										<a href="#" class="btn btn-primary-simple">Více informací</a>
+										<a href="#" class="btn btn-primary">Mám zájem</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<button type="button" class="btn mx-auto js-fetchHTML btn-primary mt-8" data-fetch-url="./_archiveBenefits.html" data-fetch-container="#archiveBenefits" data-fetch-limit="3" data-text="načíst další aktuality" data-text-fetching="Načítám..." data-text-error="Omluvte chybu, nepodařilo se načíst další aktuality">
+						načíst další aktuality
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" style="
+    background: url('./images/bg/footer.jpg') no-repeat center center / cover;
+  ">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__col">
+						<h6 class="h3 subTitleDecoration text-white">Hlavní navigace</h6>
+						<ul class="footer__list">
+							<li>
+								<a href="#">Domů</a>
+							</li>
+							<li>
+								<a href="#">O Kaprainu</a>
+							</li>
+							<li>
+								<a href="#">Aktuality</a>
+							</li>
+							<li>
+								<a href="#">Akce</a>
+							</li>
+							<li>
+								<a href="#">Adresář</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="h3 subTitleDecoration text-white">Další stránky</h6>
+						<ul class="footer__list">
+							<li>
+								<a href="#">Benefity pro zaměstnanace</a>
+							</li>
+							<li>
+								<a href="#">Volné pozice</a>
+							</li>
+							<li>
+								<a href="#">O intranetu</a>
+							</li>
+							<li>
+								<a href="#">Směrnice a formuláře</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="h3 subTitleDecoration text-white">Podpora</h6>
+						<ul class="footer__list">
+							<li>
+								<div class="text-sm fw-medium text-uppercase text-white mb-1">
+									Admin Intranetu
+								</div>
+								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
+							</li>
+							<li>
+								<div class="text-sm fw-medium text-uppercase text-white mb-1">
+									HR Oddělení
+								</div>
+								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
+							</li>
+							<li>
+								<div class="text-sm fw-medium text-uppercase text-white mb-1">
+									IT Oddělení
+								</div>
+								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="footer__logo">
+						<img src="images/ico/logo-footer.svg" loading="lazy" alt="logo" />
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>

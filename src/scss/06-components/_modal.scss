@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   z-index: 99999;
+  overflow: auto;
   &-content {
     padding: 48px;
     background-color: var(--color-light);
@@ -46,7 +47,6 @@
 
     @include media-breakpoint-down(md) {
       right: 24px;
-      top: 24px;
       width: 44px;
       height: 44px;
     }
@@ -80,6 +80,9 @@
     padding-top: 32px;
     border-top: 2px solid var(--color-secondary);
     flex-wrap: nowrap;
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
     .btn {
       width: 100%;
     }
@@ -177,4 +180,7 @@
       border: 1px solid var(--color-primary);
     }
   }
+}
+body.no-scroll {
+  overflow: hidden;
 }
