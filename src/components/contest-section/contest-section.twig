@@ -12,9 +12,14 @@
           minim veniam, quis nostrud exercitation.
         </p>
         <div class="article-section__social">
-          <button class="btn btn-primary contestModalBtn">
+          <a
+            data-bs-toggle="modal"
+            href="#cancelBenefit"
+            role="button"
+            class="btn btn-primary"
+          >
             Chci se zapojit
-          </button>
+          </a>
           <div class="article-section__social-info">
             <div class="fw-light">výherce -</div>
             <div class="fw-bold">John Doe</div>
@@ -66,12 +71,30 @@
       </div>
     </div>
   </div>
-  <div class="modal contest-modal">
+</section>
+
+<div
+  class="modal fade"
+  id="cancelBenefit"
+  aria-labelledby="cancelBenefitLabel"
+  tabindex="-1"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <span class="close"> </span>
-      <h2 class="h3 text-secondary subTitleDecoration mb-3">
+      <h2
+        class="h3 text-secondary subTitleDecoration mb-3"
+        id="cancelBenefitLabel"
+      >
         Vyhrajte iPhone 15 PRO
       </h2>
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+
       <p class="fw-light mb-32">
         Odpovězte správně na soutěžní, otázku a vyhrajte svelé ceny! Výherce se
         losuje 20.11.2024.
@@ -104,19 +127,41 @@
         </label>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary submitAnswer">Odeslat</button>
-        <button class="btn btn-secondary resetForm">Zrušit</button>
+        <button
+          class="btn btn-primary"
+          data-bs-target="#cancelBenefit2"
+          data-bs-toggle="modal"
+        >
+          Odeslat
+        </button>
+        <button data-bs-dismiss="modal" class="btn btn-secondary closeModal">
+          Zrušit
+        </button>
       </div>
     </div>
   </div>
-
- 
-  <div class="modal success-modal">
+</div>
+<div
+  class="modal fade"
+  id="cancelBenefit2"
+  aria-labelledby="cancelBenefitLabel2"
+  tabindex="-1"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 class="h3 text-secondary subTitleDecoration mb-3">
+      <h2
+        class="h3 text-secondary subTitleDecoration mb-3"
+        id="cancelBenefitLabel2"
+      >
         Odpověď odeslána
       </h2>
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
 
       <p class="fw-light mb-32">
         Hotovo! Vaše odpověď byla úspěšně odeslána. Přejeme vám hodně štěstí při
@@ -126,8 +171,10 @@
         Výherce se losuje <span class="fw-semibold">20.11.2024</span>
       </p>
       <div class="modal-footer">
-        <button class="btn btn-secondary closeSuccessModal">Zavřít</button>
+        <button data-bs-dismiss="modal" class="btn btn-secondary closeModal">
+          Zavřít
+        </button>
       </div>
     </div>
   </div>
-</section>
+</div>

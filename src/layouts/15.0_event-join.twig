@@ -18,7 +18,12 @@
           večírek, který se uskuteční 7.12. v našem útulném vánočním sále.
         </p>
         <div class="article-section__social">
-          <button class="btn btn-primary eventtModalBtn">
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            href="#cancelBenefit"
+            role="button"
+          >
             Mám zájem se zúčastnit
           </button>
         </div>
@@ -52,22 +57,40 @@
   </div>
 </section>
 
-<div class="modal" id="cancelParticipationModal">
-  <div class="modal-content">
-    <span class="close"> </span>
-    <h2 class="h3 text-secondary subTitleDecoration mb-3">Účast potvrzena</h2>
-    <p class="fw-light mb-32">
-      Jsme rádi, že se této akce zúčastníte! Podrobnosti o akci byly zaslány na
-      váš e-mail.
-    </p>
-    <p class="modal__perex fw-semibold">22.12. 2024 - Vánoční večírek</p>
+<div
+  class="modal fade"
+  id="cancelBenefit"
+  aria-labelledby="cancelBenefitLabel"
+  tabindex="-1"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h2
+        class="h3 text-secondary subTitleDecoration mb-3"
+        id="cancelBenefitLabel"
+      >
+        Účast potvrzena
+      </h2>
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
 
-    <div class="modal-footer">
-      <button class="btn btn-secondary closeModal">Zavřít</button>
+      <p class="fw-light mb-32">
+        Jsme rádi, že se této akce zúčastníte! Podrobnosti o akci byly zaslány
+        na váš e-mail.
+      </p>
+      <p class="modal__perex fw-semibold">22.12. 2024 - Vánoční večírek</p>
+      <div class="modal-footer">
+        <button data-bs-dismiss="modal" class="btn btn-secondary closeModal">
+          Zavřít
+        </button>
+      </div>
     </div>
   </div>
 </div>
- 
- 
 
 {% endblock %}

@@ -78,7 +78,12 @@
     line-height: normal;
   }
 }
-
+.h4,
+.o-content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
 .text-xs {
   font-size: 12px;
   line-height: 15px;

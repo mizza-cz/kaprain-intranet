@@ -1,0 +1,30 @@
+.benefit-section {
+  margin-bottom: 176px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px;
+  }
+  &__inner {
+    .archiveBenefits__inner {
+      @include media-breakpoint-down(xl) {
+        justify-content: center;
+      }
+    }
+    .archiveBenefits__icon {
+      max-width: 100px;
+      height: 80px;
+    }
+    .activeBenefit {
+      font-size: 13px;
+      line-height: 14.3px;
+    }
+    .archiveBenefits__img {
+      height: 180px;
+    }
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 32px;
+  }
+}

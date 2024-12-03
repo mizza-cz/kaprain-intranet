@@ -73,6 +73,10 @@
       align-items: center;
       color: var(--color-secondary);
       gap: 4px;
+      @include media-breakpoint-down(lg) {
+        font-size: 22px;
+        flex-wrap: wrap;
+      }
     }
   }
   .tag {
