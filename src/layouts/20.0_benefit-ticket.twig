@@ -1,9 +1,13 @@
-{% extends "@components/base/base.twig" %} {% set title =
-"19.0_benefit-multisport-subscription" %} {% block main %}
+{% extends "@components/base/base.twig" %} {% set title = "20.0_benefit-ticket"
+%} {% block main %}
 
 <section class="benefit-section">
   <div class="article-section__header">
-    <img src="images/content/multisport.jpg" loading="lazy" alt="multisport" />
+    <img
+      src="images/content/benefit-ticket.jpg"
+      loading="lazy"
+      alt="multisport"
+    />
     <div class="container-medium">
       <div class="article-section__info">
         <div class="article-section__date">09. 10. 2024</div>
@@ -21,7 +25,7 @@
           </ul>
         </div>
 
-        <h1 class="h2 mb-48">Multisport karta</h1>
+        <h1 class="h2 mb-32 subTitleDecoration">Česko vs. Švýcarsko</h1>
         <div class="article-section__social">
           <a
             class="btn btn-primary"
@@ -31,8 +35,8 @@
             >Mám zájem o benefit
           </a>
           <div class="article-section__social-info">
-            <div class="fw-light">s doplatkem</div>
-            <div class="fw-bold">jen 100 Kč měsíčne</div>
+            <div class="fw-light">aktuálně dostupných</div>
+            <div class="fw-bold">23 kódů</div>
           </div>
         </div>
       </div>
@@ -151,11 +155,74 @@
 >
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
+      <div class="tag active">Slevový kód</div>
       <h2
         class="h3 text-secondary subTitleDecoration mb-3"
         id="cancelBenefitLabel"
       >
-        Vaše předplatné
+        Česko vs. Švýcarsko
+      </h2>
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <p class="fw-light mb-32">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna.
+      </p>
+      <p class="modal__perex text-secondary">
+        <span class="fw-semibold"> 50% - </span>- sleva na vstup
+      </p>
+      <form action="" class="formTicket">
+        <div class="formTicket__row">
+          <div class="formTicket-label">
+            <input type="text" placeholder="Jméno hosta" class="guest-name" />
+          </div>
+          <label class="o-select formTicket-label">
+            <select class="ticket-type" required>
+              <option value="" disabled selected hidden>Typ vstupenky</option>
+              <option value="1">Plný vstup</option>
+              <option value="2">Zlevněný vstup</option>
+            </select>
+          </label>
+        </div>
+        <div class="formTicketMore">Přidat další vstupenku</div>
+        <div class="modal-footer">
+          <button
+            class="btn btn-primary"
+            id="submitBtn"
+            data-bs-target="#cancelBenefit2"
+            data-bs-toggle="modal"
+          >
+            potvrdit
+          </button>
+          <button data-bs-dismiss="modal" class="btn btn-secondary closeModal">
+            Zrušit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="cancelBenefit2"
+  aria-labelledby="cancelBenefitLabel2"
+  tabindex="-1"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h2
+        class="h3 text-secondary subTitleDecoration mb-3"
+        id="cancelBenefitLabel2"
+      >
+        Váš slevový kód
       </h2>
       <button
         type="button"
@@ -163,14 +230,31 @@
         data-bs-dismiss="modal"
         aria-label="Close"
       ></button>
-
       <p class="fw-light mb-32">
-        Hotovo! Děkujeme za váš zájem, HR tým vás bude kontaktovat s
-        podrobnostmi. Na vaši e-mailovou adresu bylo zasláno shrnutí žádosti.
+        Hotovo! Na vaši e-mailovou adresu bylo zasláno shrnutí události spolu se
+        slevovým kódem.
       </p>
       <p class="modal__perex text-secondary">
-        <span class="fw-semibold"> Mutisport karta - 100 kč </span>- měsíčně
+        <span class="fw-semibold"> Česko vs. Švýcarsko <br />50% - </span>sleva
+        na vstup
       </p>
+      <div class="code-container">
+        <input type="text" id="codeInput" value="XW33DKW493321" readonly />
+        <button id="copyButton" class="copy-button">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.2757 0H6.99984V15.3333H18.3332V3.05749L15.2757 0ZM16.9998 14H8.33317V1.33333H14.724L16.9998 3.60917V14ZM11.6665 16.6667H12.9998V20H1.6665V4.66667H5.6665V6H2.99984V18.6667H11.6665V16.6667Z"
+              fill="#29235C"
+            />
+          </svg>
+        </button>
+      </div>
       <div class="modal-footer">
         <button data-bs-dismiss="modal" class="btn btn-secondary closeModal">
           Zavřít

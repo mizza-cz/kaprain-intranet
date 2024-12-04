@@ -10,6 +10,12 @@
   align-items: center;
   z-index: 99999;
   overflow: auto;
+  .tag {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 9px 12px 7px;
+    margin-bottom: 16px;
+  }
   &-dialog {
     max-width: 640px !important;
     width: 100%;
