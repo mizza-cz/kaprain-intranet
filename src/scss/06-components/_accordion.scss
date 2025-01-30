@@ -17,6 +17,10 @@
     font-size: 22px;
     line-height: 39px;
     padding: 16px 72px 16px 32px !important;
+    @include media-breakpoint-down(lg) {
+      font-size: 15px;
+      line-height: 30px;
+    }
   }
   &-button:not(.collapsed) {
     background-color: var(--color-secondary);
@@ -40,11 +44,20 @@
     padding: 32px;
     p + p {
       margin-top: 40px;
+      @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+      }
     }
     p {
       display: block;
       color: var(--color-secondary);
       font-weight: 300;
+      font-size: 22px;
+      line-height: 39px;
+      @include media-breakpoint-down(lg) {
+        font-size: 15px;
+        line-height: 30px;
+      }
     }
   }
 }

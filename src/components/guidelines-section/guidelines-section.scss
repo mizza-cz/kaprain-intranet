@@ -26,6 +26,8 @@
     flex-direction: column;
     padding: 32px;
     text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   &__links {

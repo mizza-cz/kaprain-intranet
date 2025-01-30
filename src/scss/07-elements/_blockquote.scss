@@ -6,11 +6,11 @@ blockquote {
     padding: 32px 24px;
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     top: 0;
-    background-image: url('../images/ico/quotes.svg');
+    background-image: url("../images/ico/quotes.svg");
     width: 200px;
     height: 176px;
     @include media-breakpoint-down(lg) {
@@ -22,12 +22,12 @@ blockquote {
   }
   span {
     display: block;
-    font-size: 20px;
     font-weight: 600;
-    line-height: 36px;
     text-align: right;
     color: var(--color-secondary);
     margin-top: 10px;
+    font-size: 18px;
+    line-height: 32px;
   }
   p {
     display: block;
