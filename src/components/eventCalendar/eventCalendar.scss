@@ -108,7 +108,7 @@
         margin-bottom: 24px;
       }
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0px;
         left: 0;
@@ -149,29 +149,29 @@
     color: var(--color-secondary);
     span {
       display: block;
-      font-size: 40px;
+      font-size: 2rem;
       font-weight: 500;
-      line-height: 50px;
+      line-height: 2.5rem;
       @include media-breakpoint-down(lg) {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: normal;
       }
     }
     h2 {
-      font-size: 56px;
       font-weight: 700;
-      line-height: 61.6px;
       position: relative;
-      padding-bottom: 36px;
+      padding-bottom: 32px;
       margin-bottom: 32px;
+      font-size: 48px;
+      line-height: 58px;
       @include media-breakpoint-down(lg) {
-        font-size: 40px;
+        font-size: 32px;
         padding-bottom: 20px;
-        line-height: 56px;
+        line-height: normal;
         margin-bottom: 24px;
       }
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0px;
         left: 0;

@@ -47,4 +47,10 @@
   --bs-gutter-y: 32px;
   --bs-gutter-x: 32px;
 }
+.gy-8 {
+  --bs-gutter-y: 64px !important;
+  @include media-breakpoint-down(lg) {
+    --bs-gutter-y: 48px !important;
+  }
+}
 /*! purgecss end ignore */

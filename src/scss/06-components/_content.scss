@@ -57,9 +57,9 @@
 
 .h2,
 .o-content h2 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 600;
-  line-height: 61.6px;
+  line-height: 58px;
   color: var(--color-secondary);
   @include media-breakpoint-down(xl) {
     font-size: 32px;
@@ -105,6 +105,6 @@
   line-height: 39.6px;
 }
 .text-xxl {
-  font-size: 24px;
-  line-height: 43.2px;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }
