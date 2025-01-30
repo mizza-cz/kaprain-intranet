@@ -71,10 +71,6 @@ select {
 
 body {
   font-family: "Sora", sans-serif !important;
-  font-size: 20px;
-  line-height: 36px;
-  @include media-breakpoint-down(lg) {
-    font-size: 18px;
-    line-height: 32px;
-  }
+  font-size: 15px;
+  line-height: 30px;
 }

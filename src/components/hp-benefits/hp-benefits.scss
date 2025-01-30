@@ -10,7 +10,7 @@
     margin-right: -16px;
     flex-wrap: wrap;
     @include media-breakpoint-down(xxl) {
-      justify-content: center;
+      justify-content: flex-start;
       gap: 32px 0;
     }
     li {
@@ -46,6 +46,9 @@
     line-height: 40px;
     letter-spacing: 0.04em;
     color: var(--color-secondary);
+    z-index: 2;
+    position: relative;
+    transition: all 0.5s;
     @include media-breakpoint-down(lg) {
       font-size: 24px;
       line-height: normal;
@@ -56,6 +59,9 @@
     margin-bottom: 32px;
     height: 56px;
     max-width: 78px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.5s;
   }
   &__item {
     display: block;
@@ -64,8 +70,25 @@
     box-shadow: 0px 16px 40px 0px #00000026;
     padding: 48px;
     text-decoration: none;
+    transition: all 0.5s;
+    overflow: hidden;
     @include media-breakpoint-down(lg) {
       padding: 32px;
+    }
+    &:hover {
+      box-shadow: transparent;
+      .hp-benefits__icon {
+        transform: translateX(20px);
+      }
+      .hp-benefits__title {
+        transform: translateX(20px);
+      }
+      .hp-benefits__img {
+        img {
+          transform: scale(1.1);
+          opacity: 1;
+        }
+      }
     }
   }
   &__img {
@@ -74,12 +97,14 @@
     top: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       opacity: 0.1;
+      transition: all 0.5s;
     }
   }
 }
