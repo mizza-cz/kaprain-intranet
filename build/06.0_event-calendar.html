@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>06.0_event-calendar - Kaprain Intranet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!--****** Favicon ******-->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+
+	<!--****** Fonts ******-->
+
+	<!--****** Styles  ******-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<link rel="stylesheet" media="screen, handheld" href="css/hotfix.css" />
+	<!--****** Styles  ******-->
+
+	<!--****** Scripts  ******-->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+	<!-- ****** scripts ****** -->
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="header__inner">
+				<a class="header__logo" href="/">
+					<img src="images/ico/logo.svg" alt="logo" />
+				</a>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li>
+							<a href="#">O Kaprainu</a>
+						</li>
+						<li>
+							<a href="#">Aktuality</a>
+						</li>
+						<li>
+							<a href="#">Akce</a>
+						</li>
+						<li>
+							<a href="#">Adresář</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__right">
+					<a class="btn btn-secondary d-md-block d-none" href="#">
+						Můj personální portál
+					</a>
+
+					<button class="c-header__opener js-header__opener" type="button">
+						<span></span>
+					</button>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu__wrapper">
+					<a class="btn btn-secondary d-block d-md-none mb-4" href="#">
+						Můj personální portál
+					</a>
+					<div class="row g-5">
+						<div class="col-lg-4">
+							<div class="menu__title">Hlavní navigace</div>
+							<ul class="menu__list">
+								<li>
+									<a class="active" href="#">Domů</a>
+								</li>
+								<li>
+									<a href="#">O Kaprainu</a>
+								</li>
+								<li>
+									<a href="#">Aktuality</a>
+								</li>
+								<li>
+									<a href="#">Akce</a>
+								</li>
+								<li>
+									<a href="#">Adresář</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<div class="menu__title">Další podstránky</div>
+							<ul class="menu__list">
+								<li>
+									<a href="#">Benefity pro zaměstnanace</a>
+								</li>
+								<li>
+									<a href="#">Volné pozice</a>
+								</li>
+								<li>
+									<a href="#">O intranetu</a>
+								</li>
+								<li>
+									<a href="#">Směrnice a formuláře</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<div class="menu__title">zaměstnanecká podpora</div>
+							<ul class="menu__support">
+								<li class="menu__support-admin">
+									<span> Spojte se s Adminom Intranetu </span>
+									<a href="tel:+420800800790">+420 800 800 790</a>
+								</li>
+								<li class="menu__support-hr">
+									<span> Spojte se s Vaším HR Oddělením </span>
+									<a href="tel:+420800800800">+420 800 800 800</a>
+								</li>
+								<li class="menu__support-it">
+									<span>Spojte se s Vaším IT Oddělením</span>
+									<a href="tel:+420810810810">+420 810 810 810</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<section class="eventCalendar">
+				<div class="headerPage" style="background-image: url('./images/bg/event-calendar.jpg')">
+					<div class="container">
+						<div class="headerPage__inner">
+							<h1 class="h1 text-white">Kalendář akcí</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="mb-8 d-flex justify-content-between gap-3 flex-wrap">
+						<div class="d-flex gap-3 flex-wrap">
+							<a href="#" class="btn btn-primary"> nadcházející akce </a>
+							<a href="#" class="btn btn-secondary">minulé akce</a>
+						</div>
+						<form class="date formDate">
+							<input type="text" class="" placeholder="Hledat podle data..." />
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-th"></span>
+							</div>
+						</form>
+					</div>
+					<div class="eventCalendar__inner" id="eventCalendar">
+						<div class="eventCalendar__item">
+							<div class="eventCalendar__img">
+								<img src="images/content/calendar-1.png" loading="lazy" alt="" />
+							</div>
+							<div class="eventCalendar__item-wrap">
+								<div class="eventCalendar__info">
+									<h2 class="text-secondary">7.12. 2024</h2>
+									<div class="eventCalendar__name">Mikulášská párty</div>
+								</div>
+								<div class="eventCalendar__text">
+									<p class="fw-light mb-32">
+										Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné
+										vánoční atmosféry! Srdečně vás zveme na náš exkluzivní firemní
+										mikulášský večírek, který se uskuteční 7.12. v našem útulném
+										vánočním sále.
+									</p>
+									<a href="#" class="btn btn-primary-simple">Více informací</a>
+								</div>
+							</div>
+						</div>
+						<div class="eventCalendar__item">
+							<div class="eventCalendar__img">
+								<img src="images/content/calendar-1.png" loading="lazy" alt="" />
+							</div>
+							<div class="eventCalendar__item-wrap">
+								<div class="eventCalendar__info">
+									<h2 class="text-secondary">22.12. 2024</h2>
+									<div class="eventCalendar__name">Vánoční večírek</div>
+								</div>
+								<div class="eventCalendar__text">
+									<p class="fw-light mb-32">
+										Zažijte s námi nezapomenutelnou noc plnou zábavy a kouzelné
+										vánoční atmosféry! Srdečně vás zveme na náš exkluzivní firemní
+										mikulášský večírek, který se uskuteční 7.12. v našem útulném
+										vánočním sále.
+									</p>
+									<a href="#" class="btn btn-primary-simple">Více informací</a>
+								</div>
+							</div>
+						</div>
+						<div class="eventCalendar__item">
+							<div class="eventCalendar__img">
+								<img src="images/content/calendar-1.png" loading="lazy" alt="" />
+							</div>
+							<div class="eventCalendar__item-wrap">
+								<div class="eventCalendar__info">
+									<h2 class="text-secondary">10.04. 2024</h2>
+									<div class="eventCalendar__name">Bowling teambuilging</div>
+								</div>
+								<div class="eventCalendar__text">
+									<p class="fw-light mb-32">
+										Čaká nás popoludnie plné zábavy a športu, kde si spoločne zahráme
+										volejbal! Nezáleží na tom, či si profík alebo nováčik – ide nám
+										hlavne o dobrú náladu a tímového ducha.
+									</p>
+									<a href="#" class="btn btn-primary-simple">Více informací</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn mx-auto js-fetchHTML btn-primary mt-8" data-fetch-url="./_eventCalendar.html" data-fetch-container="#eventCalendar" data-fetch-limit="3" data-text="načíst další události" data-text-fetching="Načítám..." data-text-error="Omluvte chybu, nepodařilo se načíst další události">
+						načíst další události
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" style="
+    background: url('./images/bg/footer.jpg') no-repeat center center / cover;
+  ">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__col">
+						<h6 class="h3 subTitleDecoration text-white">Hlavní navigace</h6>
+						<ul class="footer__list">
+							<li>
+								<a href="#">Domů</a>
+							</li>
+							<li>
+								<a href="#">O Kaprainu</a>
+							</li>
+							<li>
+								<a href="#">Aktuality</a>
+							</li>
+							<li>
+								<a href="#">Akce</a>
+							</li>
+							<li>
+								<a href="#">Adresář</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="h3 subTitleDecoration text-white">Další stránky</h6>
+						<ul class="footer__list">
+							<li>
+								<a href="#">Benefity pro zaměstnanace</a>
+							</li>
+							<li>
+								<a href="#">Volné pozice</a>
+							</li>
+							<li>
+								<a href="#">O intranetu</a>
+							</li>
+							<li>
+								<a href="#">Směrnice a formuláře</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="h3 subTitleDecoration text-white">Podpora</h6>
+						<ul class="footer__list">
+							<li>
+								<div class="text-sm fw-medium text-uppercase text-white mb-1">
+									Admin Intranetu
+								</div>
+								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
+							</li>
+							<li>
+								<div class="text-sm fw-medium text-uppercase text-white mb-1">
+									HR Oddělení
+								</div>
+								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
+							</li>
+							<li>
+								<div class="text-sm fw-medium text-uppercase text-white mb-1">
+									IT Oddělení
+								</div>
+								<a class="text-primary" href="tel:+420800800790">+420 800 800 790</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="footer__logo">
+						<img src="images/ico/logo-footer.svg" loading="lazy" alt="logo" />
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>

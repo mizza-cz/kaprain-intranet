@@ -9,16 +9,16 @@
         justify-content: center;
       }
     }
-    .archiveBenefits__icon {
-      max-width: 100px;
-      height: 80px;
-    }
+    
     .activeBenefit {
       font-size: 13px;
       line-height: 14.3px;
     }
     .archiveBenefits__img {
       height: 180px;
+    }
+    .archiveBenefits__info {
+      height: calc(100% - 180px);
     }
   }
   &__title {
