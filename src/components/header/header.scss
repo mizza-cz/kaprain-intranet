@@ -11,7 +11,7 @@
       max-width: 99em !important;
       padding: 1rem 0;
     }
-    @include media-breakpoint-down(xl) {
+    @media (max-width: 1200px) {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
@@ -41,7 +41,7 @@
 }
 
 .header__nav {
-  @include media-breakpoint-down(xl) {
+  @media (max-width: 1200px) {
     display: none;
   }
   &-list {
@@ -58,6 +58,9 @@
       border-bottom: 0.125rem solid transparent;
       transition: all 0.2s;
       padding-bottom: 0.0625rem;
+      @media (max-width: 1366px) {
+        font-size: 0.75rem;
+      }
       &:hover {
         border-bottom: 2px solid var(--color-primary);
       }

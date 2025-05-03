@@ -80,8 +80,8 @@
     }
   }
   &__icon {
-    max-width: 3.375rem;
-    height: 3.375rem;
+    max-width: 2.5rem;
+    height: 2.5rem;
 
     img {
       width: 100%;
@@ -94,8 +94,8 @@
 
 .activeBenefit {
   color: var(--color-secondary);
-  padding-right: 2.5rem;
-  font-size: 0.875rem;
+  // padding-right: 2.5rem;
+  font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.0375rem;
   letter-spacing: 0.02em;
@@ -104,18 +104,17 @@
   text-transform: uppercase;
   width: fit-content;
   position: relative;
-  @include media-breakpoint-down(xl) {
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: var(--color-primary);
-    width: 1.75rem;
-    height: 1.75rem;
-    right: 0;
-    background-image: url("../images/ico/check.svg");
-    background-repeat: no-repeat;
-    background-size: 1rem 0.75rem;
-    background-position: center center;
-  }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: var(--color-primary);
+  //   width: 1.75rem;
+  //   height: 1.75rem;
+  //   right: 0;
+  //   background-image: url("../images/ico/check.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: 1rem 0.75rem;
+  //   background-position: center center;
+  // }
 }

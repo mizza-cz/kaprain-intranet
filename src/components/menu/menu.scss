@@ -59,6 +59,7 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+
     @include media-breakpoint-down(lg) {
       font-size: 1.25rem;
     }

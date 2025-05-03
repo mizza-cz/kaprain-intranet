@@ -40,8 +40,11 @@
     }
   }
   &__title {
+    @media (min-width: 1920px) {
+      font-size: 1.1rem;
+    }
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     color: var(--color-secondary);
@@ -50,9 +53,13 @@
     transition: all 0.5s;
   }
   &__icon {
+    @media (min-width: 1920px) {
+      height: 2.25rem;
+      max-width: 2.25rem;
+    }
     display: block;
-    height: 2.5rem;
-    max-width: 2.5rem;
+    height: 2rem;
+    max-width: 2rem;
     position: relative;
     z-index: 2;
     transition: all 0.5s;
@@ -69,7 +76,6 @@
       .hp-benefits__img {
         img {
           transform: scale(1.1);
-          opacity: 1;
         }
       }
     }
@@ -95,4 +101,9 @@
       transition: all 0.5s;
     }
   }
+}
+.hp-benefits__item:hover .hp-benefits__icon,
+.hp-benefits__item:hover .hp-benefits__title {
+  -webkit-transform: translateX(1.25rem);
+  transform: translateX(1.25rem);
 }
