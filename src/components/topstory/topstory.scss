@@ -2,78 +2,70 @@
   margin: 0 auto;
   &__item {
     width: 100%;
-    height: 800px;
+    height: 40rem;
     display: flex !important;
     flex-direction: column;
     justify-content: flex-end;
-
     position: relative;
+    @include media-breakpoint-only(xl) {
+      height: 32rem;
+    }
     @include media-breakpoint-down(xl) {
       height: auto;
       aspect-ratio: 1120/800;
     }
     &::before {
       content: "";
-      position: absolute;
-      left: 0;
       z-index: 1;
       right: 0;
-      width: 100%;
-      top: 0;
-      height: 100%;
       background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(255, 255, 255, 0.33) 100%
+          360deg,
+          hsla(0, 0%, 100%, 0),
+          hsla(0, 0%, 25%, 0.33)
         ),
-        linear-gradient(
-          270deg,
-          rgba(41, 35, 92, 0) 0%,
-          rgba(41, 35, 92, 0.66) 100%
-        );
+        linear-gradient(180deg, rgba(41, 35, 92, 0), rgba(41, 35, 92, 0.66));
     }
     img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
-      position: absolute;
-      left: 0;
-      top: 0;
     }
   }
   &__content {
     color: var(--color-light);
     position: relative;
     z-index: 3;
-    padding-bottom: 128px;
+    padding-bottom: 8rem;
     @include media-breakpoint-down(lg) {
-      padding-bottom: 60px;
+      padding-bottom: 3.75rem;
     }
     .h1 {
       @include media-breakpoint-down(md) {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 2rem;
+        line-height: 2.5rem;
       }
     }
     span {
       display: block;
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: 300;
-      line-height: 60px;
-      @include media-breakpoint-down(xl) {
-        font-size: 20px;
-        line-height: normal;
+      line-height: 3.75rem;
+      @include media-breakpoint-only(xxl) {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
       }
-      @include media-breakpoint-down(sm) {
-        display: none;
+      @include media-breakpoint-only(xl) {
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
+      }
+      @include media-breakpoint-down(xl) {
+        font-size: 1.25rem;
+        line-height: normal;
       }
     }
     .btn {
-      margin-top: 64px;
+      margin-top: 4rem;
       @include media-breakpoint-down(xl) {
-        margin-top: 24px;
+        margin-top: 1.5rem;
       }
-      
     }
   }
 
@@ -84,10 +76,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 72px;
-    gap: 16px;
+    bottom: 4.5rem;
+    gap: 1rem;
     @include media-breakpoint-down(lg) {
-      bottom: 24px;
+      bottom: 1.5rem;
     }
   }
   .slick-dots button {
@@ -95,13 +87,21 @@
     border: none;
     padding: 0;
     font-size: 0;
-    width: 11px;
-    height: 11px;
-    border: 2px solid var(--color-light);
+    width: 0.6875rem;
+    height: 0.6875rem;
+    border: 0.125rem solid var(--color-light);
     background-color: transparent;
     cursor: pointer;
   }
   .slick-dots .slick-active button {
     background-color: var(--color-light);
   }
+}
+.topstory__item:before,
+.topstory__item img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
 }

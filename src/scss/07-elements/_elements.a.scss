@@ -1,8 +1,11 @@
 a {
   color: inherit;
   text-decoration: underline;
+  -webkit-text-decoration-color: inherit;
   text-decoration-color: inherit;
+  transition: -webkit-text-decoration-color 0.3s;
   transition: text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
   &:hover {
     text-decoration-color: transparent;
   }

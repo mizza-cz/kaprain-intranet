@@ -3,29 +3,32 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-light);
-  margin-bottom: 176px;
+  margin-bottom: 11rem;
   @include media-breakpoint-down(lg) {
-    margin-bottom: 88px;
+    margin-bottom: 5.5rem;
   }
   &__wrap {
-    max-width: 1728px;
+    max-width: 108rem;
     margin: 0 auto;
     position: relative;
-    padding: 132px 0;
+    padding: 8.25rem 0;
     overflow: hidden;
+    @media (min-width: 1920px) {
+      max-width: 100%;
+    }
     @include media-breakpoint-down(md) {
-      padding-bottom: 48px;
+      padding-bottom: 3rem;
     }
     &::after {
       content: "Soutež";
       position: absolute;
-      bottom: -36px;
-      left: -24px;
-      font-size: 188px;
+      bottom: -2.25rem;
+      left: -1.5rem;
+      font-size: 11.75rem;
       font-weight: 800;
-      line-height: 188px;
-      color: rgba(0, 0, 0, 0);
-      -webkit-text-stroke: 2px rgba(202, 174, 91, 0.75);
+      line-height: 11.75rem;
+      color: transparent;
+      -webkit-text-stroke: 0.125rem rgba(202, 174, 91, 0.75);
       font-family: sans-serif;
       @include media-breakpoint-down(md) {
         display: none;
@@ -36,38 +39,41 @@
       position: absolute;
       left: 0;
       top: 0;
-      height: 458px;
-      width: 300px;
+      height: 28.625rem;
+      width: 18.75rem;
       background-image: url("../images/ico/prom.svg");
       background-repeat: no-repeat;
       background-size: contain;
       @include media-breakpoint-down(lg) {
-        height: 320px;
-        width: 220px;
+        height: 20rem;
+        width: 13.75rem;
       }
     }
   }
   &__title {
-    max-width: 614px;
-
-    font-size: 56px;
+    max-width: 38.375rem;
     font-weight: 800;
-    line-height: 70px;
     letter-spacing: 0.04em;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    @include media-breakpoint-only(xl) {
+      font-size: 2.5rem;
+      line-height: 3.125rem;
+    }
     @include media-breakpoint-down(lg) {
-      font-size: 40px;
-      line-height: 48px;
-      margin-bottom: 16px;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 1rem;
     }
     &::before {
       content: "";
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       left: 0;
-      width: 256px;
-      height: 4px;
+      width: 16rem;
+      height: 0.25rem;
       background-color: var(--color-primary);
     }
   }

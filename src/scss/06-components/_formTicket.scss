@@ -1,29 +1,27 @@
 .formTicket {
   &__row {
     display: flex;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
     @include media-breakpoint-down(sm) {
       flex-wrap: wrap;
     }
   }
   &-label {
-    max-width: 220px;
+    max-width: 13.75rem;
     width: 100%;
     display: block;
-    @include media-breakpoint-down(sm) {
-    }
     input {
-      padding-left: 20px;
-      padding-right: 20px;
-      border: 1px solid var(--color-secondary);
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      border: 0.0625rem solid var(--color-secondary);
       width: 100%;
-      height: 50px;
+      height: 2.5rem;
       display: block;
       outline: none;
-      font-size: 16px;
+      font-size: 0.75rem;
       font-weight: 500;
-      line-height: 20px;
+      line-height: 0.9375rem;
       letter-spacing: 0.04em;
 
       &::placeholder {
@@ -34,18 +32,19 @@
 }
 
 .formTicketMore {
-  padding-left: 45px;
+  padding-left: 2.8125rem;
   position: relative;
-
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1rem;
   letter-spacing: 0.04em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   &::before {
     content: "";
     position: absolute;
@@ -53,28 +52,38 @@
     background-image: url("../images/ico/plus.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    background-size: 12px 12px;
-    width: 29px;
-    height: 29px;
-    border: 1px solid var(--color-secondary);
-    min-width: 29px;
+    background-position: 50%;
+    background-size: 0.75rem 0.75rem;
+    width: 1.8125rem;
+    height: 1.8125rem;
+    min-width: 1.8125rem;
+    border: 0.0625rem solid var(--color-secondary);
   }
 }
-
+.formTicketMore:before,
 .ticket-type {
-  padding: 12px 20px;
-  border: 1px solid var(--color-secondary);
-  font-size: 16px;
+  border: 0.0625rem solid var(--color-secondary);
+}
+.ticket-type {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 0.9375rem;
   letter-spacing: 0.04em;
   outline: none;
-  height: 50px;
-  max-width: 220px;
+  height: 2.5rem;
+  max-width: 13.75rem;
   width: 100%;
   display: block;
   color: var(--color-secondary);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+  background-position-y: 0.9375rem;
+  background-size: 0.875rem 0.5rem;
+  background-image: url(../images/ico/dropdown.svg);
   &::-ms-expand {
     display: none;
   }
@@ -84,20 +93,12 @@
   &:invalid {
     color: #8b8b8b;
   }
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-  background-repeat: no-repeat;
-  background-position-x: 92%;
-  background-position-y: 1.3rem;
-  background-size: 14px 8px;
-  background-image: url("../images/ico/dropdown.svg");
 }
 .remove-btn {
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
   position: relative;
-  border: 1px solid var(--color-secondary);
+  border: 0.0625rem solid var(--color-secondary);
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -109,42 +110,35 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    background-image: url("../images/ico/minus.svg");
+    background-image: url(../images/ico/minus.svg);
     background-repeat: no-repeat;
+    background-position: 50%;
     background-size: contain;
-    background-position: center;
-    background-size: contain;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 }
 
 .code-container {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   display: flex;
-  gap: 16px;
-  height: 50px;
+  gap: 1rem;
+  height: 3.125rem;
   input {
     width: 100%;
     height: 100%;
-    border: 1px solid var(--color-secondary);
-    display: flex;
-    align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     letter-spacing: 0.04em;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
   button {
-    width: 50px;
-    min-width: 50px;
-    border: 1px solid var(--color-secondary);
+    width: 3.125rem;
+    min-width: 3.125rem;
     background-color: transparent;
     cursor: pointer;
-    display: flex;
-    align-items: center;
     justify-content: center;
     transition: all 0.3s;
     svg path {
@@ -157,4 +151,10 @@
       }
     }
   }
+}
+.code-container button,
+.code-container input {
+  border: 0.0625rem solid var(--color-secondary);
+  display: flex;
+  align-items: center;
 }

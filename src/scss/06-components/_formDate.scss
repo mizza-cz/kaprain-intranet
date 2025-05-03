@@ -1,9 +1,11 @@
 .formDate {
   display: flex;
   align-items: center;
-  border: 1px solid var(--color-secondary);
-  height: 52px;
+  border: 0.0625rem solid var(--color-secondary);
+  height: 2.5rem;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   @include media-breakpoint-down(sm) {
     width: 100%;
@@ -12,13 +14,14 @@
   &::before {
     content: "";
     position: absolute;
-    left: 20px;
-    background-image: url("../images/ico/calendar.svg");
-    width: 19px;
-    height: 20px;
+    left: 1.25rem;
+    background-image: url(../images/ico/calendar.svg);
+    width: 1.1875rem;
+    height: 1.25rem;
     background-repeat: no-repeat;
     background-size: contain;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: -1;
   }
@@ -28,12 +31,12 @@
     border: none;
     outline: none;
     width: 17.5rem;
-    padding-left: 64px;
-    padding-right: 20px;
+    padding-left: 4rem;
+    padding-right: 1.25rem;
     color: var(--color-secondary);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 17.6px;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     cursor: pointer;
     letter-spacing: 0.04em;
     transition: all 0.3s;

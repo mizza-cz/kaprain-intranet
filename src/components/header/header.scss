@@ -5,21 +5,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 115.2rem;
     margin: 0 auto;
-    padding: 24px 64px;
+    padding: 1rem 8%;
+    @media (min-width: 1920px) {
+      max-width: 99em !important;
+      padding: 1rem 0;
+    }
     @include media-breakpoint-down(xl) {
-      padding-left: 24px;
-      padding-right: 24px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
     @include media-breakpoint-down(md) {
-      padding-top: 16px;
-      padding-bottom: 16px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
   &__logo {
     width: 13.2rem;
-    height: 40px;
+    height: 2.5rem;
     display: block;
     @include media-breakpoint-down(md) {
       width: 10rem;
@@ -33,7 +36,7 @@
   &__right {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
   }
 }
 
@@ -44,16 +47,17 @@
   &-list {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
     a {
-      font-size: 20px;
+      font-size: 1rem;
       font-weight: 500;
+      -webkit-text-decoration-color: transparent;
       text-decoration-color: transparent;
-      line-height: 25px;
+      line-height: 1.25rem;
       color: var(--color-secondary);
-      border-bottom: 2px solid transparent;
+      border-bottom: 0.125rem solid transparent;
       transition: all 0.2s;
-      padding-bottom: 1px;
+      padding-bottom: 0.0625rem;
       &:hover {
         border-bottom: 2px solid var(--color-primary);
       }

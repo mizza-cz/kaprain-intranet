@@ -1,25 +1,22 @@
 /*! purgecss start ignore */
 .accordion {
   &-item {
-    border: 1px solid var(--color-secondary) !important;
+    border: 0.0625rem solid var(--color-secondary) !important;
   }
   &-item + &-item {
-    margin-top: 16px;
+    margin-top: 1rem;
   }
   &-button {
     outline: none !important;
     cursor: pointer;
     box-shadow: none !important;
-
     background-color: var(--color-light);
     color: var(--color-secondary);
     font-weight: 500;
-    font-size: 22px;
-    line-height: 39px;
-    padding: 16px 72px 16px 32px !important;
+    padding: 1rem 4.5rem 1rem 2rem !important;
     @include media-breakpoint-down(lg) {
-      font-size: 15px;
-      line-height: 30px;
+      font-size: 0.9375rem;
+      line-height: 1.875rem;
     }
   }
   &-button:not(.collapsed) {
@@ -30,33 +27,30 @@
     }
   }
   &-button::after {
-    //  display: none;
     background-image: none;
     background-color: var(--color-secondary);
     mask: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2212%22%20viewBox%3D%220%200%2020%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2011.2812L10.8467%2010.5555L20%202.70965L18.3034%200.718761L10%207.83888L1.69663%200.718761L0%202.70965L9.15332%2010.5555L10%2011.2812Z%22%20fill%3D%22%2329225C%22%2F%3E%3C%2Fsvg%3E");
     mask-repeat: no-repeat;
-    width: 22px;
-    height: 12px;
-    right: 32px;
+    width: 1.125rem;
+    height: 0.75rem;
+    right: 2rem;
     position: absolute;
   }
   &-body {
-    padding: 32px;
+    padding: 2rem;
     p + p {
-      margin-top: 40px;
+      margin-top: 2.5rem;
       @include media-breakpoint-down(lg) {
-        margin-top: 20px;
+        margin-top: 1.25rem;
       }
     }
     p {
       display: block;
       color: var(--color-secondary);
       font-weight: 300;
-      font-size: 22px;
-      line-height: 39px;
       @include media-breakpoint-down(lg) {
-        font-size: 15px;
-        line-height: 30px;
+        font-size: 0.9375rem;
+        line-height: 1.875rem;
       }
     }
   }

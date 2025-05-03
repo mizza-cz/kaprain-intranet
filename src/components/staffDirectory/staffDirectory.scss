@@ -7,23 +7,30 @@
   }
   &__btn {
     position: relative;
-    padding: 1.0625rem 46px 0.9375rem 20px !important;
+    padding: 1.0625rem 2.875rem 0.9375rem 1.25rem !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
     min-width: fit-content;
-    height: 54px;
     @include media-breakpoint-down(sm) {
       width: 100%;
     }
     &::before {
       content: "";
       position: absolute;
-      right: 20px;
-      width: 16px;
-      height: 16px;
+      right: 1.25rem;
+      width: 1rem;
+      height: 1rem;
       background-color: var(--color-secondary);
-      mask: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2212%22%20viewBox%3D%220%200%2020%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2011.2812L10.8467%2010.5555L20%202.70965L18.3034%200.718761L10%207.83888L1.69663%200.718761L0%202.70965L9.15332%2010.5555L10%2011.2812Z%22%20fill%3D%22%2329225C%22%2F%3E%3C%2Fsvg%3E");
+      -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 11.281l.847-.726L20 2.71 18.303.719 10 7.839 1.697.719 0 2.709l9.153 7.847.847.725z' fill='%2329225C'/%3E%3C/svg%3E");
+      mask: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 11.281l.847-.726L20 2.71 18.303.719 10 7.839 1.697.719 0 2.709l9.153 7.847.847.725z' fill='%2329225C'/%3E%3C/svg%3E");
+      -webkit-mask-repeat: no-repeat;
       mask-repeat: no-repeat;
-      mask-size: 16px;
+      -webkit-mask-size: 1rem;
+      mask-size: 1rem;
+      -webkit-mask-position: center;
       mask-position: center;
       transition: all 0.2s;
     }
@@ -36,39 +43,39 @@
   }
   &__menu {
     display: flex;
-    gap: 24px 64px;
+    gap: 1.5rem 4rem;
     flex-wrap: wrap;
     @include media-breakpoint-down(sm) {
-      gap: 16px;
+      gap: 1rem;
     }
   }
   &__row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 64px;
-    gap: 24px 64px;
+    margin-bottom: 4rem;
+    gap: 1.5rem 4rem;
     @include media-breakpoint-down(lg) {
       flex-direction: column-reverse;
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
     @include media-breakpoint-down(sm) {
-      gap: 16px;
+      gap: 1rem;
     }
   }
   &__tags {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     flex-wrap: wrap;
   }
   &__tag {
     background-color: var(--color-secondary);
     color: var(--color-light);
-    border: 1px solid var(--color-secondary);
-    font-size: 16px;
+    border: 0.0625rem solid var(--color-secondary);
+    font-size: 0.75rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 0.9375rem;
     letter-spacing: 0.04em;
-    padding: 17px 20px 15px 20px;
+    padding: 0.75rem 1rem;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -76,48 +83,49 @@
   .remove-tag {
     font-size: 0;
     background-image: url("../images/ico/close.svg");
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     display: block;
     background-size: contain;
-    background-position: center center;
-    margin-left: 10px;
+    background-position: 50%;
+    margin-left: 0.625rem;
   }
 }
 
 .staffDirectory-category {
-  margin-bottom: 64px;
-  padding-bottom: 64px;
-  border-bottom: 2px solid var(--color-secondary);
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 0.125rem solid var(--color-secondary);
   display: none;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
   @include media-breakpoint-down(lg) {
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
   }
   &__title {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 0.9375rem;
     letter-spacing: 0.04em;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
   }
   &__list {
     li {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
 
       input[type="checkbox"] {
+        -webkit-appearance: none;
         appearance: none;
-        width: 20px;
-        height: 20px;
-        border: 1px solid var(--color-secondary);
-        border-radius: 2px;
-        margin-right: 10px;
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 0.0625rem solid var(--color-secondary);
+        border-radius: 0.125rem;
+        margin-right: 0.625rem;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -131,22 +139,22 @@
           &::after {
             content: "";
             background-image: url("../images/ico/close.svg");
-            font-size: 14px;
+            font-size: 0.875rem;
             color: #fff;
-            width: 16px;
-            height: 16px;
+            width: 1rem;
+            height: 1rem;
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: center;
+            background-position: 50%;
           }
         }
       }
 
       label {
         color: var(--color-secondary);
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
-        line-height: 36px;
+        line-height: 2.25rem;
         cursor: pointer;
       }
       label.checked {
@@ -163,25 +171,29 @@
 }
 
 .staffDirectory__item {
-  box-shadow: 0px 16px 40px 0px #00000026;
-  padding: 48px;
+  box-shadow: 0 1rem 2.5rem 0 rgba(0, 0, 0, 0.1490196078);
+  padding: 3rem;
   height: 100%;
   @include media-breakpoint-down(sm) {
-    padding: 32px;
+    padding: 2rem;
   }
   &-title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 2.5rem;
     color: var(--color-secondary);
     position: relative;
-    padding-bottom: 18px;
-    margin-bottom: 16px;
+    padding-bottom: 1.125rem;
+    margin-bottom: 1rem;
+    @include media-breakpoint-only(xl) {
+      font-size: 1.25rem;
+      line-height: 1.5625rem;
+    }
     &::before {
       content: "";
       position: absolute;
-      height: 2px;
-      width: 128px;
+      height: 0.125rem;
+      width: 8rem;
       bottom: 0;
       left: 0;
       background-color: var(--color-primary);
@@ -189,7 +201,7 @@
   }
   &-info li {
     position: relative;
-    padding-left: 32px;
+    padding-left: 2rem;
     display: flex;
     align-items: center;
     &::before {
@@ -198,22 +210,22 @@
       left: 0;
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: center center;
-      width: 16px;
+      background-position: 50%;
+      width: 1rem;
     }
   }
   &-info .tel::before {
     background-image: url("../images/ico/staff-tel.svg");
-    height: 16px;
+    height: 1rem;
   }
   &-info .mail::before {
     background-image: url("../images/ico/staff-mail.svg");
-    height: 12px;
+    height: 0.75rem;
   }
 }
 .staffDirectory {
-  margin-bottom: 176px;
+  margin-bottom: 11rem;
   @include media-breakpoint-down(lg) {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 }

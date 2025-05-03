@@ -1,9 +1,11 @@
 .searchForm {
   display: flex;
   align-items: center;
-  border: 1px solid var(--color-secondary);
-  height: 52px;
+  border: 0.0625rem solid var(--color-secondary);
+  height: 2.5rem;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   input {
     height: 100%;
@@ -11,12 +13,12 @@
     border: none;
     outline: none;
     width: 14rem;
-    padding-left: 64px;
-    padding-right: 20px;
+    padding-left: 4rem;
+    padding-right: 1.25rem;
     color: var(--color-secondary);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 17.6px;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     cursor: pointer;
     letter-spacing: 0.04em;
     transition: all 0.3s;
@@ -30,9 +32,9 @@
     background: transparent;
     display: block;
     position: absolute;
-    left: 20px;
-    width: 21px;
-    height: 21px;
+    left: 1.25rem;
+    width: 1.3125rem;
+    height: 1.3125rem;
     padding: 0;
     margin: 0;
     cursor: pointer;

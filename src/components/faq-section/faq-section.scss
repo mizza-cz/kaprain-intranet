@@ -1,10 +1,10 @@
 .faq-section {
   &__inner {
     max-width: 68.267rem;
-    padding: 0 16px;
-    margin: 0 auto 176px;
+    padding: 0 1rem;
+    margin: 0 auto 11rem;
     @include media-breakpoint-down(lg) {
-      margin-bottom: 60px;
+      margin-bottom: 3.75rem;
     }
   }
 }

@@ -1,20 +1,20 @@
 .footerPage {
-  padding-top: 64px;
-  margin-top: 64px;
-  border-top: 2px solid var(--color-secondary);
+  padding-top: 4rem;
+  margin-top: 4rem;
+  border-top: 0.125rem solid var(--color-secondary);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1rem;
   flex-wrap: wrap;
   @include media-breakpoint-down(lg) {
-    margin-top: 40px;
-    padding-top: 40px;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
   }
   &__nav {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     @include media-breakpoint-down(lg) {
       flex-wrap: wrap;
     }

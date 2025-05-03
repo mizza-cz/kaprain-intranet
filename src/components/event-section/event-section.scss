@@ -1,23 +1,23 @@
 .event-section {
-  margin-bottom: 176px;
+  margin-bottom: 11rem;
   @include media-breakpoint-down(lg) {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
   &__head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 32px;
-    gap: 32px;
+    margin-bottom: 2rem;
+    gap: 2rem;
     flex-wrap: wrap-reverse;
   }
   &__state {
     position: relative;
     color: var(--color-secondary);
-    padding-right: 48px;
-    font-size: 16px;
+    padding-right: 3rem;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 17.6px;
+    line-height: 1.1rem;
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
@@ -26,27 +26,31 @@
       content: "";
       position: absolute;
       background-color: var(--color-primary);
-      width: 32px;
-      height: 32px;
+      width: 2rem;
+      height: 2rem;
       right: 0;
       background-image: url("../images/ico/check.svg");
       background-repeat: no-repeat;
-      background-size: 16px 12px;
-      background-position: center center;
+      background-size: 1rem 0.75rem;
+      background-position: 50%;
     }
   }
   &__date {
     position: relative;
-    padding-bottom: 20px;
-    margin-bottom: 16px;
-    font-size: 2rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 1.875rem;
     color: var(--color-secondary);
+    @include media-breakpoint-only(xl){
+      font-size: 1.25rem;
+      line-height: 1.5625rem;
+    }
     @include media-breakpoint-down(lg) {
-      font-size: 15px;
-      line-height: 30px;
-      padding-bottom: 10px;
+      font-size: 0.9375rem;
+      line-height: 1.875rem;
+      padding-bottom: 0.625rem;
     }
     &::before {
       content: "";
@@ -54,11 +58,11 @@
       bottom: 0;
       left: 0;
       background-color: var(--color-primary);
-      width: 288px;
-      height: 4px;
+      width: 18rem;
+      height: 0.25rem;
       @include media-breakpoint-down(lg) {
-        height: 2px;
-        width: 120px;
+        height: 0.125rem;
+        width: 7.5rem;
       }
     }
   }
@@ -75,9 +79,9 @@
     }
   }
   .photoalbum-section__item {
-    margin-top: 64px;
+    margin-top: 4rem;
     @include media-breakpoint-down(lg) {
-      margin-top: 40px;
+      margin-top: 2.5rem;
     }
   }
 }

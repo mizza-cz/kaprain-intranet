@@ -1,9 +1,11 @@
-ul,
-ol {
+ol,
+ul {
   padding: 0;
-  margin: 0;
   list-style: none;
 }
-li {
+
+li,
+ol,
+ul {
   margin: 0;
 }

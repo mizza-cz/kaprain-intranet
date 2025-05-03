@@ -1,25 +1,25 @@
 .archivePosts {
-  margin-bottom: 176px;
+  margin-bottom: 11rem;
   @include media-breakpoint-down(lg) {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   &__inner {
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -1rem;
+    margin-right: -1rem;
     display: flex;
     flex-wrap: wrap;
     @include media-breakpoint-down(lg) {
-      gap: 32px 0;
+      gap: 2rem 0;
     }
   }
 }
 
 .archivePosts__item {
-  padding: 0 16px;
+  padding: 0 1rem;
 
   &:first-child {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
     max-width: 100%;
     flex: 100%;
     @include media-breakpoint-down(lg) {
@@ -53,7 +53,7 @@
     }
     .post__info p {
       -webkit-line-clamp: 4;
-      max-height: calc(1.5em * 4);
+      max-height: 6em;
     }
     .post__img:after {
       width: 24rem;
@@ -67,7 +67,7 @@
     }
   }
   &:not(:first-child) {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     max-width: 33.333%;
     flex: 0 0 33.333%;
     @include media-breakpoint-only(lg) {

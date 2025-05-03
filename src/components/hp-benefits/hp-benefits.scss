@@ -1,20 +1,20 @@
 .hp-benefits {
-  margin-bottom: 176px;
+  margin-bottom: 11rem;
   @include media-breakpoint-down(lg) {
-    margin-bottom: 88px;
+    margin-bottom: 5.5rem;
   }
   &__inner {
     display: flex;
     align-items: center;
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -1rem;
+    margin-right: -1rem;
     flex-wrap: wrap;
     @include media-breakpoint-down(xxl) {
       justify-content: flex-start;
-      gap: 32px 0;
+      gap: 2rem 0;
     }
     li {
-      padding: 0 16px;
+      padding: 0 1rem;
       max-width: 20%;
       flex: 0 0 20%;
       @include media-breakpoint-only(xl) {
@@ -41,19 +41,18 @@
   }
   &__title {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
     color: var(--color-secondary);
     z-index: 2;
     position: relative;
     transition: all 0.5s;
-    
   }
   &__icon {
     display: block;
-    height: 40px;
-    max-width: 40px;
+    height: 2.5rem;
+    max-width: 2.5rem;
     position: relative;
     z-index: 2;
     transition: all 0.5s;
@@ -62,11 +61,9 @@
     display: block;
     width: 100%;
     position: relative;
-
     text-decoration: none;
     transition: all 0.5s;
 
-    
     &:hover {
       box-shadow: transparent;
       .hp-benefits__img {
@@ -81,14 +78,14 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    box-shadow: 0px 12px 16px 0px #00000026;
+    box-shadow: 0 0.75rem 1rem 0 #00000026;
     position: relative;
-    height: 220px;
+    height: 13.75rem;
     .h3 {
       position: absolute;
       bottom: 0;
       left: 0;
-      padding: 0 32px 24px;
+      padding: 0 2rem 1.5rem;
     }
     img {
       width: 100%;
