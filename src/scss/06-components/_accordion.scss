@@ -14,6 +14,7 @@
     color: var(--color-secondary);
     font-weight: 500;
     padding: 1rem 4.5rem 1rem 2rem !important;
+    position: relative;
     @include media-breakpoint-down(lg) {
       font-size: 0.9375rem;
       line-height: 1.875rem;
@@ -22,19 +23,27 @@
   &-button:not(.collapsed) {
     background-color: var(--color-secondary);
     color: var(--color-light);
-    &::after {
+    &::before {
       background-color: var(--color-light);
+      transform: rotate(-180deg);
     }
   }
   &-button::after {
+    display: none;
+  }
+  &-button::before {
+    content: "";
+    position: absolute;
     background-image: none;
     background-color: var(--color-secondary);
     mask: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2212%22%20viewBox%3D%220%200%2020%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%2011.2812L10.8467%2010.5555L20%202.70965L18.3034%200.718761L10%207.83888L1.69663%200.718761L0%202.70965L9.15332%2010.5555L10%2011.2812Z%22%20fill%3D%22%2329225C%22%2F%3E%3C%2Fsvg%3E");
     mask-repeat: no-repeat;
-    width: 1.125rem;
+    width: 1.4rem;
     height: 0.75rem;
     right: 2rem;
     position: absolute;
+    background-size: contain;
+    transition: transform 0.25s ease;
   }
   &-body {
     padding: 2rem;
