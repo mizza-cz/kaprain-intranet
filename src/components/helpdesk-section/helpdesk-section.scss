@@ -28,6 +28,8 @@
     padding-bottom: 32px;
     position: relative;
     margin-bottom: 32px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     &::before {
       content: "";
       position: absolute;
@@ -77,10 +79,12 @@
     background-color: #29235c;
   }
   .btn {
-    font-size: 16px;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     width: 100%;
-    margin-top: 32px;
-    height: 52px;
+    margin-top: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,14 +95,14 @@
     padding: 16px 20px;
     color: var(--color-secondary);
     width: 100%;
-    height: 100px;
+    height: 160px;
     border: 1px solid var(--color-secondary);
     max-height: 240px;
     outline: none;
     resize: vertical;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 110.00000000000001%;
+    font-size: 0.75rem;
+    line-height: 110%;
     letter-spacing: 0.04em;
 
     &:focus,
@@ -115,8 +119,8 @@
     border: 1px solid var(--color-secondary);
     color: var(--color-secondary);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 110.00000000000001%;
+    font-size: 0.75rem;
+    line-height: 110%;
     letter-spacing: 0.04em;
     height: 50px;
     padding-left: 20px;
@@ -133,9 +137,9 @@
   }
 }
 .helpdeskForular__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 125%;
+  line-height: 1.875rem;
   position: relative;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
@@ -160,8 +164,8 @@
 }
 
 .fileUpload__icon {
-  width: 52px;
-  height: 52px;
+  width: 3.125rem;
+  height: 3.125rem;
   min-width: 52px;
   border: 2px solid var(--color-secondary);
   display: flex;
@@ -177,7 +181,7 @@
 }
 .fileUpload__text {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.75rem;
   line-height: 100%;
   letter-spacing: 0.04em;
   color: var(--color-secondary);

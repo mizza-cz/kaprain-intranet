@@ -83,10 +83,18 @@
   font-weight: 600;
   line-height: 1.875rem;
 }
-
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 150%;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 0.9625rem;
+}
+.text-light-md {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 150%;
 }
 
 .text-lg {
