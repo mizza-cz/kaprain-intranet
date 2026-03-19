@@ -1,0 +1,466 @@
+<section class="staffDirectory">
+  <div
+    class="headerPage"
+    style="background-image: url('./images/bg/staff-directory.jpg')"
+  >
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Adresář zaměstnanců</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="h2 titleDecoration text-secondary mb-8">
+      Nové posily v naší skupině
+    </h2>
+
+    <h3 class="h3 text-secondary mb-32">Vedení společnosti</h3>
+    <div class="row g-5 mb-8">
+      <div class="col-xxl-4 col-lg-6">
+        <div class="managementItem">
+          <div class="managementItem__img">
+            <img
+              class="object-fit-cover"
+              width="174"
+              height="261"
+              src="images/content/managementItem-1.png"
+              loading="lazy"
+              alt="managementItem"
+            />
+          </div>
+          <div class="managementItem__content">
+            <div class="managementItem__position">Executive Manager</div>
+            <div class="staffDirectory__item-title mb-32">John Doe</div>
+            <ul class="tags">
+              <li>
+                <div class="tag tag-secondary tag-sm">Praha</div>
+              </li>
+              <li>
+                <div class="tag tag-primary tag-sm">Mafra</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-lg-6">
+        <div class="managementItem">
+          <div class="managementItem__img">
+            <img
+              class="object-fit-cover"
+              width="174"
+              height="261"
+              src="images/content/managementItem-2.png"
+              loading="lazy"
+              alt="managementItem"
+            />
+          </div>
+          <div class="managementItem__content">
+            <div class="managementItem__position">Happiness manager</div>
+            <div class="staffDirectory__item-title mb-32">John Doe</div>
+            <ul class="tags">
+              <li>
+                <div class="tag tag-secondary tag-sm">Praha</div>
+              </li>
+              <li>
+                <div class="tag tag-primary tag-sm">Mafra</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="managementsSlider">
+      <div class="managementsSlider-header">
+        <h3 class="h3 text-secondary">Vedení společnosti</h3>
+        <div class="managementsSlider__arrows">
+          <button
+            class="managementsSlider__arrow managementsSlider__arrow--prev"
+            type="button"
+          >
+            {% include "@images/chevron-left.svg" %}
+          </button>
+          <button
+            class="managementsSlider__arrow managementsSlider__arrow--next"
+            type="button"
+          >
+            {% include "@images/chevron-right.svg" %}
+          </button>
+        </div>
+      </div>
+      <ul class="managementsSlider-js managementsSlider__inner">
+        {% for i in 1..7 %}
+        <li class="managementsSlider__slide">
+          <div class="staffDirectory__item">
+            <div class="text-secondary">Executive Manager</div>
+            <div class="staffDirectory__item-title">John Doe</div>
+            <ul class="tags mb-0">
+              <li>
+                <div class="tag tag-secondary tag-sm">Praha</div>
+              </li>
+              <li>
+                <div class="tag tag-primary tag-sm">Mafra</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="company-departures" data-sections>
+      <div class="company-departures__head">
+        <h3 class="h2 titleDecoration text-secondary">
+          Odchody ze společnosti
+        </h3>
+
+        <button
+          type="button"
+          class="company-departures__toggle btn btn-secondary"
+          data-sections-toggle
+          aria-expanded="false"
+          aria-controls="company-sections-content"
+        >
+          Prohlédnout sekci
+        </button>
+      </div>
+
+      <div
+        id="company-sections-content"
+        class="company-departures__content"
+        data-sections-content
+        hidden
+      >
+        <div class="row g-5 mb-8">
+          <div class="col-xxl-4 col-lg-6">
+            <div class="managementItem">
+              <div class="managementItem__img">
+                <img
+                  class="object-fit-cover"
+                  width="174"
+                  height="261"
+                  src="images/content/managementItem-1.png"
+                  loading="lazy"
+                  alt="managementItem"
+                />
+              </div>
+              <div class="managementItem__content">
+                <div class="managementItem__position">Executive Manager</div>
+                <div class="staffDirectory__item-title mb-32">John Doe</div>
+                <ul class="tags">
+                  <li>
+                    <div class="tag tag-secondary tag-sm">Praha</div>
+                  </li>
+                  <li>
+                    <div class="tag tag-primary tag-sm">Mafra</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="managementsSlider">
+          <div class="managementsSlider-header">
+            <h3 class="h3 text-secondary">Zaměstnanci</h3>
+            <div class="managementsSlider__arrows">
+              <button
+                class="managementsSlider__arrow managementsSlider__arrow--prev"
+                type="button"
+              >
+                {% include "@images/chevron-left.svg" %}
+              </button>
+              <button
+                class="managementsSlider__arrow managementsSlider__arrow--next"
+                type="button"
+              >
+                {% include "@images/chevron-right.svg" %}
+              </button>
+            </div>
+          </div>
+          <ul class="managementsSlider-js managementsSlider__inner">
+            {% for i in 1..7 %}
+            <li class="managementsSlider__slide">
+              <div class="staffDirectory__item">
+                <div class="text-secondary">Executive Manager</div>
+                <div class="staffDirectory__item-title">John Doe</div>
+                <ul class="tags mb-0">
+                  <li>
+                    <div class="tag tag-secondary tag-sm">Praha</div>
+                  </li>
+                  <li>
+                    <div class="tag tag-primary tag-sm">Mafra</div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h2 class="h2 titleDecoration text-secondary mb-8">
+      Vyhledat spolupracovníky
+    </h2>
+    <div class="staffDirectory-filter">
+      <div class="staffDirectory-filter__row">
+        <div class="staffDirectory-filter__menu">
+          <div class="staffDirectory-filter__btn btn btn-primary">
+            zobrazit filtry
+          </div>
+          <ul class="staffDirectory-filter__tags">
+            <li>
+              <div class="staffDirectory-filter__tag">Praha</div>
+            </li>
+            <li>
+              <div class="staffDirectory-filter__tag">Brno</div>
+            </li>
+            <li>
+              <div class="staffDirectory-filter__tag">Hr oddělení</div>
+            </li>
+          </ul>
+        </div>
+        <form class="searchForm">
+          <button>
+            <img
+              src="images/ico/search.svg"
+              loading="lazy"
+              alt="searchForm-btn"
+            />
+          </button>
+          <input type="text" placeholder="Vyhledávání..." />
+        </form>
+      </div>
+    </div>
+    <form class="staffDirectory-category">
+      <div class="row g-4">
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">Město</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input checked type="checkbox" id="praha" />
+              <label for="praha">Praha</label>
+            </li>
+            <li>
+              <input checked type="checkbox" id="brno" />
+              <label for="brno">Brno</label>
+            </li>
+            <li>
+              <input type="checkbox" id="ostrava" />
+              <label for="ostrava">Ostrava</label>
+            </li>
+            <li>
+              <input type="checkbox" id="berlin" />
+              <label for="berlin">Berlín</label>
+            </li>
+            <li>
+              <input type="checkbox" id="hamburg" />
+              <label for="hamburg">Hamburg</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">Město</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input type="checkbox" id="kolin" />
+              <label for="kolin">Kolín</label>
+            </li>
+            <li>
+              <input type="checkbox" id="bratislava" />
+              <label for="bratislava">Bratislava</label>
+            </li>
+            <li>
+              <input type="checkbox" id="londyn" />
+              <label for="londyn">Londýn</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">Oddělení</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input type="checkbox" id="executiveOddeleni" />
+              <label for="executiveOddeleni">Executive oddělení</label>
+            </li>
+            <li>
+              <input type="checkbox" id="financeOddeleni" />
+              <label for="financeOddeleni">Finance oddělení</label>
+            </li>
+            <li>
+              <input type="checkbox" id="obchodniOddeleni" />
+              <label for="obchodniOddeleni">Obchodní oddělení</label>
+            </li>
+            <li>
+              <input checked type="checkbox" id="hrOddeleni" />
+              <label for="hrOddeleni">HR oddělení</label>
+            </li>
+            <li>
+              <input type="checkbox" id="itOddeleni" />
+              <label for="itOddeleni">IT oddělení</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xl-3 col-sm-6">
+          <div class="staffDirectory-category__title">Oddělení</div>
+          <ul class="staffDirectory-category__list">
+            <li>
+              <input type="checkbox" id="marketingOddeleni" />
+              <label for="marketingOddeleni">Marketing oddělení</label>
+            </li>
+            <li>
+              <input type="checkbox" id="projektoveOddeleni" />
+              <label for="projektoveOddeleni">Projektové oddělení</label>
+            </li>
+            <li>
+              <input type="checkbox" id="udrzbyOddeleni" />
+              <label for="udrzbyOddeleni">Oddělení údržby</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+
+    <div class="row g-5 staffDirectory__inner" id="staffDirectory">
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Brno</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Happiness manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="staffDirectory__item">
+          <ul class="tags">
+            <li>
+              <div class="tag active">Praha</div>
+            </li>
+            <li>
+              <div class="tag active">HR oddělení</div>
+            </li>
+            <li>
+              <div class="tag">Back office</div>
+            </li>
+          </ul>
+          <div class="text-secondary">Executive Manager</div>
+          <div class="staffDirectory__item-title">John Doe</div>
+          <ul class="staffDirectory__item-info">
+            <li class="tel">+420 000 000 000</li>
+            <li class="mail">john.don@kaprain.cz</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btn mx-auto js-fetchHTML btn-primary mt-8"
+      data-fetch-url="./_staffDirectory.html"
+      data-fetch-container="#staffDirectory"
+      data-fetch-limit="3"
+      data-text="načíst další zaměstnance "
+      data-text-fetching="Načítám..."
+      data-text-error="Omluvte chybu, nepodařilo se načíst další zaměstnance "
+    >
+      načíst další zaměstnance 
+    </button>
+  </div>
+</section>

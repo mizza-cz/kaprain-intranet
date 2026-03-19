@@ -232,3 +232,39 @@
     margin-bottom: 3.75rem;
   }
 }
+
+.company-departures__content {
+  height: 0;
+  transition: height 0.15s;
+}
+
+.company-departures__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.company-departures__toggle::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.25s ease;
+  margin-top: -4px;
+}
+
+.company-departures__toggle.is-open::after {
+  transform: rotate(-135deg);
+  margin-top: 4px;
+}
+
+.company-departures__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin-bottom: 64px;
+}

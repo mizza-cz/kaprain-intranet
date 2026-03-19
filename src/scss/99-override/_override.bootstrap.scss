@@ -39,7 +39,9 @@
 .text-white {
   color: var(--color-light) !important;
 }
-
+.bg-primary {
+  background: var(--color-primary) !important;
+}
 .mb-8 {
   margin-bottom: 4rem;
   @include media-breakpoint-down(lg) {

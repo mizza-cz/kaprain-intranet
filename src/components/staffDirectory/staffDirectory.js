@@ -18,17 +18,14 @@ function staffDirectoryClick() {
   });
 }
 
-// Селекторы
 const tagsContainer = document.querySelector(".staffDirectory-filter__tags");
 const checkboxes = document.querySelectorAll(
   ".staffDirectory-category input[type='checkbox']"
 );
 const form = document.querySelector(".staffDirectory-category");
 
-// Проверка, существуют ли нужные элементы на странице
 if (tagsContainer && checkboxes.length > 0 && form) {
   function updateTags() {
-    // Проверяем, существует ли tagsContainer
     if (tagsContainer) {
       tagsContainer.innerHTML = "";
     }
@@ -37,12 +34,10 @@ if (tagsContainer && checkboxes.length > 0 && form) {
       const label = document.querySelector(`label[for="${checkbox.id}"]`);
 
       if (checkbox.checked) {
-        // Добавляем класс checked к label
         if (label) {
           label.classList.add("checked");
         }
 
-        // Создаем тег
         const tagText = label ? label.textContent.trim() : "";
 
         const tag = document.createElement("li");
@@ -53,18 +48,15 @@ if (tagsContainer && checkboxes.length > 0 && form) {
           </div>
         `;
 
-        // Обработчик удаления тега
         tag.querySelector(".remove-tag").addEventListener("click", () => {
           checkbox.checked = false;
           updateTags();
         });
 
-        // Добавляем тег в контейнер, если он существует
         if (tagsContainer) {
           tagsContainer.appendChild(tag);
         }
       } else {
-        // Убираем класс checked из label
         if (label) {
           label.classList.remove("checked");
         }
@@ -72,15 +64,12 @@ if (tagsContainer && checkboxes.length > 0 && form) {
     });
   }
 
-  // Обновляем теги при изменении состояния чекбоксов
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", () => {
       updateTags();
     });
   });
 
-  // Первоначальное обновление
   updateTags();
 }
-
 

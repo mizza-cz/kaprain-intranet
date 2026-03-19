@@ -22,3 +22,19 @@
   color: var(--color-light);
   background-color: var(--color-secondary);
 }
+
+.tag-primary {
+  background: var(--color-primary);
+  border: 0.0625rem solid var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.tag-secondary {
+  border: 0.0625rem solid var(--color-secondary);
+  color: var(--color-light);
+  background-color: var(--color-secondary);
+}
+
+.tag-sm {
+  padding: 8px 12px;
+}
