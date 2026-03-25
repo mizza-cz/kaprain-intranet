@@ -20,7 +20,7 @@
 }
 .btn.btn-arrow {
   font-size: 1rem;
-  padding: 1.5rem 7.5rem 1.25rem 2rem;
+  padding: 1.5rem 7rem 1.25rem 1.5rem;
   @include media-breakpoint-down(lg) {
     font-size: 0.875rem;
     letter-spacing: 0;
@@ -29,10 +29,10 @@
   &::before {
     content: "";
     display: inline-block;
-    width: 4.0625rem;
+    width: 3rem;
     position: absolute;
     height: 1.25rem;
-    right: 2rem;
+    right: 1.5rem;
     -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65 20'%3E%3Cpath d='M64.707 10.707a1 1 0 000-1.414l-6.364-6.364a1 1 0 10-1.414 1.414L62.586 10l-5.657 5.657a1 1 0 001.414 1.414l6.364-6.364zM0 11h64V9H0v2z'/%3E%3C/svg%3E"),
       no-repeat;
     mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65 20'%3E%3Cpath d='M64.707 10.707a1 1 0 000-1.414l-6.364-6.364a1 1 0 10-1.414 1.414L62.586 10l-5.657 5.657a1 1 0 001.414 1.414l6.364-6.364zM0 11h64V9H0v2z'/%3E%3C/svg%3E"),

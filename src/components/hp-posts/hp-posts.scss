@@ -1,10 +1,6 @@
 .hp-posts {
   margin-top: 5.5rem;
-  margin-bottom: 11rem;
-  @include media-breakpoint-down(lg) {
-    margin-top: 2.5rem;
-    margin-bottom: 5.5rem;
-  }
+  margin-bottom: 5.5rem;
 }
 .post {
   box-shadow: 0 1rem 2.5rem 0 rgba(0, 0, 0, 0.1490196078);
@@ -57,5 +53,11 @@
       max-height: 3.6em;
       margin-bottom: 2rem;
     }
+  }
+}
+
+.post.post--benefit {
+  .post__img::after {
+    display: none;
   }
 }

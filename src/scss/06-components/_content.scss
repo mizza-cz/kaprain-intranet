@@ -103,7 +103,7 @@
 
 .text-xxl {
   font-size: 1.25rem;
-  line-height: 2.5rem;
+  line-height: 150%;
 }
 
 .text-light-xxxl {
@@ -114,10 +114,14 @@
 .lh-1_8 {
   line-height: 180%;
 }
-.lh-1_25 {
-  line-height: 125%;
-}
+
 .text-xxxl {
   font-size: 22px;
   line-height: 125%;
+}
+.lh-1_25 {
+  line-height: 125%;
+}
+.lh-1 {
+  line-height: 100%;
 }

@@ -112,4 +112,32 @@
     width: 33.33333333%;
   }
 }
+.my-22 {
+  margin-block: 5.5rem;
+}
+.px-8 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+.pt-8 {
+  padding-top: 2rem !important;
+}
+.p-lg-12 {
+  @include media-breakpoint-up(lg) {
+    padding: 3rem !important;
+  }
+}
+.px-lg-12 {
+  @include media-breakpoint-up(lg) {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+.hover-outline,
+.hover-outline a {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
 /*! purgecss end ignore */
