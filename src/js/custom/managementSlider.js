@@ -1,41 +1,3 @@
-// $(".managementsSlider").each(function () {
-//   const $sliderWrapper = $(this);
-//   const $slider = $sliderWrapper.find(".managementsSlider-js");
-//   const $prev = $sliderWrapper.find(".managementsSlider__arrow--prev");
-//   const $next = $sliderWrapper.find(".managementsSlider__arrow--next");
-
-//   if (!$slider.length) return;
-
-//   $slider.slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     infinite: false,
-//     arrows: true,
-//     dots: false,
-//     prevArrow: $prev,
-//     nextArrow: $next,
-//     responsive: [
-//       {
-//         breakpoint: 1200,
-//         settings: {
-//           slidesToShow: 2,
-//         },
-//       },
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           slidesToShow: 1.2,
-//         },
-//       },
-//       {
-//         breakpoint: 468,
-//         settings: {
-//           slidesToShow: 1,
-//         },
-//       },
-//     ],
-//   });
-// });
 (function () {
   function initManagementSliders(scope) {
     const $scope = scope ? $(scope) : $(document);
@@ -123,24 +85,26 @@
       isAnimating = true;
 
       content.hidden = false;
+      content.style.overflow = "hidden";
+
+      initManagementSliders(content);
+      updateSliders(content);
+
+      const targetHeight = content.scrollHeight;
+
       content.classList.add("is-open");
       toggleButton.classList.add("is-open");
       toggleButton.setAttribute("aria-expanded", "true");
       toggleButton.textContent = closeLabel;
 
-      initManagementSliders(content);
-
-      const targetHeight = content.scrollHeight;
       content.style.height = targetHeight + "px";
-
-      requestAnimationFrame(function () {
-        updateSliders(content);
-      });
 
       function onTransitionEnd(e) {
         if (e.propertyName !== "height") return;
 
         content.style.height = "auto";
+        content.style.overflow = "visible";
+
         updateSliders(content);
 
         content.removeEventListener("transitionend", onTransitionEnd);
@@ -153,20 +117,21 @@
     function collapse() {
       isAnimating = true;
 
-      if (content.style.height === "auto") {
-        content.style.height = content.scrollHeight + "px";
-      } else {
-        content.style.height = content.scrollHeight + "px";
-      }
+      const startHeight = content.scrollHeight;
+
+      content.style.height = startHeight + "px";
+      content.style.overflow = "hidden";
 
       requestAnimationFrame(function () {
-        content.style.height = "0px";
-      });
+        requestAnimationFrame(function () {
+          content.classList.remove("is-open");
+          toggleButton.classList.remove("is-open");
+          toggleButton.setAttribute("aria-expanded", "false");
+          toggleButton.textContent = openLabel;
 
-      content.classList.remove("is-open");
-      toggleButton.classList.remove("is-open");
-      toggleButton.setAttribute("aria-expanded", "false");
-      toggleButton.textContent = openLabel;
+          content.style.height = "0px";
+        });
+      });
 
       function onTransitionEnd(e) {
         if (e.propertyName !== "height") return;
