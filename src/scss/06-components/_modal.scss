@@ -39,7 +39,7 @@
       padding: 3rem 1.5rem;
     }
     .h3 {
-      padding-right: 4.5rem;
+      padding-right: 7.5rem;
     }
   }
   &__perex {
@@ -195,4 +195,23 @@
 }
 body.no-scroll {
   overflow: hidden;
+}
+
+.modal-backdrop.fade {
+  opacity: 0 !important;
+}
+
+.questionnairesCount {
+  position: absolute;
+  color: var(--color-secondary);
+  right: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  right: 7rem;
+  top: 3.3rem;
+
+  @include media-breakpoint-down(md) {
+    right: 5rem;
+    top: 3.4rem;
+  }
 }
