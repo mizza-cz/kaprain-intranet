@@ -127,6 +127,7 @@
     transition: all 0.3s;
   }
 
+  .radio-wrapper input[type="checkbox"],
   .radio-wrapper input[type="radio"] {
     display: none;
   }
@@ -154,6 +155,16 @@
     padding-inline: 0.5rem;
     font-size: 1rem;
     line-height: 1.1rem;
+    input {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      border: none;
+      font-size: 1rem;
+      line-height: 1.1rem;
+      font-weight: 500;
+      color: var(--color-secondary);
+    }
   }
   .radio-letter,
   .radio-text {
@@ -166,7 +177,7 @@
     transition: all 0.3s;
     border: 0.0625rem solid var(--color-secondary);
   }
-
+  .radio-wrapper input[type="checkbox"]:checked + .radio-label,
   .radio-wrapper input[type="radio"]:checked + .radio-label {
     .radio-letter {
       border: 0.0625rem solid var(--color-primary);
