@@ -1,0 +1,16 @@
+.dayPlans {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/bg/contest.jpg") center/cover no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  &__content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 64px 40px;
+  }
+}
