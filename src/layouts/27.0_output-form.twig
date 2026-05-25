@@ -1,0 +1,152 @@
+{% extends "@components/base/base.twig" %} {% set title = "27.0_output-form" %}
+{% block main %}
+<section class="helpdesk-section">
+  <div class="headerPage" style="background-image: url('./images/bg/faq.jpg')">
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Výstupní formulář</h1>
+      </div>
+    </div>
+  </div>
+  <div class="helpdesk-section__content">
+    <div class="helpdeskForular">
+      <div class="helpdeskForular__content">
+        <form class="helpdeskForm">
+          <div class="row gx-3 gy-4">
+            <div class="col-12">
+              <label>
+                Jméno a příjmení
+                <select class="js-select" name="fullName">
+                  <option value="">Vyberte zaměstnance</option>
+                  <option value="jan-novak">Jan Novák</option>
+                  <option value="petr-svoboda">Petr Svoboda</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Datum výstupu
+                <input type="date" name="endDate" required />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Společnost
+                <input type="text" name="company" required />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Funkce
+                <input type="text" name="position" />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Oddělení
+                <input type="text" name="department" />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Nadřízený
+                <input type="text" name="manager" />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Forma spolupráce
+                <select class="js-select" name="cooperationType" required>
+                  <option value="">Vyberte formu spolupráce</option>
+                  <option value="HPP">HPP</option>
+                  <option value="DPP">DPP</option>
+                  <option value="ICO">IČO</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Vrácení pracovních pomůcek
+                <input type="text" name="returnedEquipment" />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Telefonní číslo
+                <select class="js-select" name="phoneTransfer">
+                  <option value="">Vyberte možnost</option>
+                  <option value="transfer">Bude se převádět</option>
+                  <option value="company">Zůstane v majetku společnosti</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Služební telefonní přístroj
+                <select class="js-select" name="companyPhone">
+                  <option value="">Vyberte možnost</option>
+                  <option value="buyout">Odkup</option>
+                  <option value="company">Zůstane v majetku společnosti</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <legend>Vrací vstupní čip</legend>
+
+              <div class="radio-group mb-0">
+                <label class="radio-wrapper">
+                  <input type="radio" name="chipReturn" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">ANO</span>
+                  </span>
+                </label>
+
+                <label class="radio-wrapper">
+                  <input type="radio" name="chipReturn" value="ne" />
+                  <span class="radio-label">
+                    <span class="radio-text">NE</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <legend>Vrací klíče</legend>
+
+              <div class="radio-group mb-0">
+                <label class="radio-wrapper">
+                  <input type="radio" name="keysReturn" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">ANO</span>
+                  </span>
+                </label>
+
+                <label class="radio-wrapper">
+                  <input type="radio" name="keysReturn" value="ne" />
+                  <span class="radio-label">
+                    <span class="radio-text">NE</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <button class="btn btn-primary" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

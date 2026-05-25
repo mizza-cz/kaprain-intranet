@@ -1,0 +1,195 @@
+{% extends "@components/base/base.twig" %} {% set title = "26.0_entry-form" %}
+{% block main %}
+<section class="helpdesk-section">
+  <div class="headerPage" style="background-image: url('./images/bg/faq.jpg')">
+    <div class="container">
+      <div class="headerPage__inner">
+        <h1 class="h1 text-white">Nástupní formulář</h1>
+      </div>
+    </div>
+  </div>
+  <div class="helpdesk-section__content">
+    <div class="helpdeskForular">
+      <div class="helpdeskForular__content">
+        <form class="helpdeskForm">
+          <div class="row gx-3 gy-4">
+            <div class="col-12">
+              <label>
+                Jméno a příjmení
+                <input type="text" name="fullName" required />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Datum nástupu
+                <input type="date" name="startDate" required />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Společnost
+                <select class="js-select" name="company" required>
+                  <option value="">Vyberte společnost</option>
+                  <option value="">společnost</option>
+                  <option value="">společnost</option>
+                  <option value="">společnost</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-12">
+              <label>
+                Funkce
+                <input type="text" name="position" />
+              </label>
+            </div>
+            <div class="col-12">
+              <label>
+                Oddělení
+                <input type="text" name="department" />
+              </label>
+            </div>
+            <div class="col-12">
+              <label>
+                Nadřízený
+                <input type="text" name="manager" />
+              </label>
+            </div>
+            <div class="col-12">
+              <label>
+                Forma spolupráce
+                <select class="js-select" name="cooperationType" required>
+                  <option value="">Vyberte formu spolupráce</option>
+                  <option value="HPP">HPP</option>
+                  <option value="DPP">DPP</option>
+                  <option value="ICO">IČO</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label>
+                Emailová adresa
+                <input type="email" name="email" required />
+              </label>
+            </div>
+            <div class="col-12">
+              <label>
+                Telefonní číslo
+                <select class="js-select" name="phoneNumberType" required>
+                  <option value="">Vyberte možnost</option>
+                  <option value="existing">Stávající</option>
+                  <option value="transfer">
+                    Přemigrovat telefonní číslo do majetku společnosti
+                  </option>
+                  <option value="new">Nové</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <legend>Pracovní místo</legend>
+              <div class="radio-group mb-3">
+                <label class="radio-wrapper">
+                  <input type="radio" name="workplace" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">ANO</span>
+                  </span>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="workplace" value="ne" />
+                  <span class="radio-label">
+                    <span class="radio-text">Ne</span>
+                  </span>
+                </label>
+              </div>
+              <label>
+                Kde
+                <input type="text" name="workplaceLocation" />
+              </label>
+            </div>
+            <div class="col-12">
+              <legend>Služební telefonní přístroj</legend>
+              <div class="radio-group mb-0">
+                <label class="radio-wrapper">
+                  <input type="radio" name="companyPhone" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">ANO</span>
+                  </span>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="companyPhone" value="ne" />
+                  <span class="radio-label">
+                    <span class="radio-text">Ne</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <legend>Přístup na sdílené disky</legend>
+              <div class="radio-group mb-3">
+                <label class="radio-wrapper">
+                  <input type="radio" name="sharedDrivesAccess" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">ANO</span>
+                  </span>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="sharedDrivesAccess" value="ne" />
+                  <span class="radio-label">
+                    <span class="radio-text">Ne</span>
+                  </span>
+                </label>
+              </div>
+              <label>
+                Na které
+                <input type="text" name="sharedDrives" />
+              </label>
+            </div>
+
+            <div class="col-12">
+              <legend>VPN</legend>
+              <div class="radio-group mb-0">
+                <label class="radio-wrapper">
+                  <input type="radio" name="vpn" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">ANO</span>
+                  </span>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="vpn" value="ne" />
+                  <span class="radio-label">
+                    <span class="radio-text">Ne</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <legend>Čip a klíč</legend>
+              <div class="radio-group mb-0">
+                <label class="radio-wrapper">
+                  <input type="checkbox" name="chip" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">Čip</span>
+                  </span>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="checkbox" name="key" value="ano" />
+                  <span class="radio-label">
+                    <span class="radio-text">Klíč</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <button class="btn btn-primary" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
