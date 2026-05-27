@@ -142,16 +142,343 @@
 					</div>
 				</div>
 				<div class="helpdesk-section__content">
-					<div class="row">
-						<div class="col-sm-6">
-							<a href="#" class="helpdeskItem">
-								<h2 class="h2">Nástupní formulář</h2>
-							</a>
+					<nav class="nav gap-4 flex-nowrap" id="nav-tab" role="tablist">
+						<button class="helpdeskItem active flex-fill" id="nav-ateam-tab" data-bs-toggle="tab" data-bs-target="#nav-ateam" type="button" role="tab" aria-controls="nav-ateam" aria-selected="true">
+							<h2 class="h2">Nástupní formulář</h2>
+						</button>
+						<button class="helpdeskItem flex-fill" id="nav-bteam-tab" data-bs-toggle="tab" data-bs-target="#nav-bteam" type="button" role="tab" aria-controls="nav-bteam" aria-selected="false">
+							<h2 class="h2">Výstupní formulář</h2>
+						</button>
+					</nav>
+					<div class="tab-content" id="helpdesk-tabContent">
+						<div class="tab-pane show active" id="nav-ateam" role="tabpanel" aria-labelledby="nav-ateam-tab">
+							<div class="helpdeskForular">
+								<div class="helpdeskForular__content">
+									<h3 class="helpdeskForular__title">Nástupní formulář</h3>
+									<form class="helpdeskForm">
+										<div class="row gx-3 gy-4">
+											<div class="col-12">
+												<label>
+													Jméno a příjmení
+													<input type="text" name="fullName" required />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Datum nástupu
+													<input type="date" name="startDate" required />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Společnost
+													<select class="js-select" name="company" required>
+														<option value="">Vyberte společnost</option>
+														<option value="">společnost</option>
+														<option value="">společnost</option>
+														<option value="">společnost</option>
+													</select>
+												</label>
+											</div>
+											<div class="col-12">
+												<label>
+													Funkce
+													<input type="text" name="position" />
+												</label>
+											</div>
+											<div class="col-12">
+												<label>
+													Oddělení
+													<input type="text" name="department" />
+												</label>
+											</div>
+											<div class="col-12">
+												<label>
+													Nadřízený
+													<input type="text" name="manager" />
+												</label>
+											</div>
+											<div class="col-12">
+												<label>
+													Forma spolupráce
+													<select class="js-select" name="cooperationType" required>
+														<option value="">Vyberte formu spolupráce</option>
+														<option value="HPP">HPP</option>
+														<option value="DPP">DPP</option>
+														<option value="ICO">IČO</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Emailová adresa
+													<input type="email" name="email" required />
+												</label>
+											</div>
+											<div class="col-12">
+												<label>
+													Telefonní číslo
+													<select class="js-select" name="phoneNumberType" required>
+														<option value="">Vyberte možnost</option>
+														<option value="existing">Stávající</option>
+														<option value="transfer">
+															Přemigrovat telefonní číslo do majetku společnosti
+														</option>
+														<option value="new">Nové</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="col-12">
+												<legend>Pracovní místo</legend>
+												<div class="radio-group mb-3">
+													<label class="radio-wrapper">
+														<input type="radio" name="workplace" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">ANO</span>
+														</span>
+													</label>
+													<label class="radio-wrapper">
+														<input type="radio" name="workplace" value="ne" />
+														<span class="radio-label">
+															<span class="radio-text">Ne</span>
+														</span>
+													</label>
+												</div>
+												<label>
+													Kde
+													<input type="text" name="workplaceLocation" />
+												</label>
+											</div>
+											<div class="col-12">
+												<legend>Služební telefonní přístroj</legend>
+												<div class="radio-group mb-0">
+													<label class="radio-wrapper">
+														<input type="radio" name="companyPhone" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">ANO</span>
+														</span>
+													</label>
+													<label class="radio-wrapper">
+														<input type="radio" name="companyPhone" value="ne" />
+														<span class="radio-label">
+															<span class="radio-text">Ne</span>
+														</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-12">
+												<legend>Přístup na sdílené disky</legend>
+												<div class="radio-group mb-3">
+													<label class="radio-wrapper">
+														<input type="radio" name="sharedDrivesAccess" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">ANO</span>
+														</span>
+													</label>
+													<label class="radio-wrapper">
+														<input type="radio" name="sharedDrivesAccess" value="ne" />
+														<span class="radio-label">
+															<span class="radio-text">Ne</span>
+														</span>
+													</label>
+												</div>
+												<label>
+													Na které
+													<input type="text" name="sharedDrives" />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<legend>VPN</legend>
+												<div class="radio-group mb-0">
+													<label class="radio-wrapper">
+														<input type="radio" name="vpn" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">ANO</span>
+														</span>
+													</label>
+													<label class="radio-wrapper">
+														<input type="radio" name="vpn" value="ne" />
+														<span class="radio-label">
+															<span class="radio-text">Ne</span>
+														</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-12">
+												<legend>Čip a klíč</legend>
+												<div class="radio-group mb-0">
+													<label class="radio-wrapper">
+														<input type="checkbox" name="chip" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">Čip</span>
+														</span>
+													</label>
+													<label class="radio-wrapper">
+														<input type="checkbox" name="key" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">Klíč</span>
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<button class="btn btn-primary" type="submit">Odeslat</button>
+									</form>
+								</div>
+							</div>
 						</div>
-						<div class="col-sm-6">
-							<a href="#" class="helpdeskItem">
-								<h2 class="h2">Výstupní formulář</h2>
-							</a>
+						<div class="tab-pane fade" id="nav-bteam" role="tabpanel" aria-labelledby="nav-bteam-tab">
+							<div class="helpdeskForular">
+								<div class="helpdeskForular__content">
+									<h3 class="helpdeskForular__title">Výstupní formulář</h3>
+									<form class="helpdeskForm">
+										<div class="row gx-3 gy-4">
+											<div class="col-12">
+												<label>
+													Jméno a příjmení
+													<select class="js-select" name="fullName">
+														<option value="">Vyberte zaměstnance</option>
+														<option value="jan-novak">Jan Novák</option>
+														<option value="petr-svoboda">Petr Svoboda</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Datum výstupu
+													<input type="date" name="endDate" required />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Společnost
+													<input type="text" name="company" required />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Funkce
+													<input type="text" name="position" />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Oddělení
+													<input type="text" name="department" />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Nadřízený
+													<input type="text" name="manager" />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Forma spolupráce
+													<select class="js-select" name="cooperationType" required>
+														<option value="">Vyberte formu spolupráce</option>
+														<option value="HPP">HPP</option>
+														<option value="DPP">DPP</option>
+														<option value="ICO">IČO</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Vrácení pracovních pomůcek
+													<input type="text" name="returnedEquipment" />
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Telefonní číslo
+													<select class="js-select" name="phoneTransfer">
+														<option value="">Vyberte možnost</option>
+														<option value="transfer">Bude se převádět</option>
+														<option value="company">
+															Zůstane v majetku společnosti
+														</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="col-12">
+												<label>
+													Služební telefonní přístroj
+													<select class="js-select" name="companyPhone">
+														<option value="">Vyberte možnost</option>
+														<option value="buyout">Odkup</option>
+														<option value="company">
+															Zůstane v majetku společnosti
+														</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="col-12">
+												<legend>Vrací vstupní čip</legend>
+
+												<div class="radio-group mb-0">
+													<label class="radio-wrapper">
+														<input type="radio" name="chipReturn" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">ANO</span>
+														</span>
+													</label>
+
+													<label class="radio-wrapper">
+														<input type="radio" name="chipReturn" value="ne" />
+														<span class="radio-label">
+															<span class="radio-text">NE</span>
+														</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-12">
+												<legend>Vrací klíče</legend>
+
+												<div class="radio-group mb-0">
+													<label class="radio-wrapper">
+														<input type="radio" name="keysReturn" value="ano" />
+														<span class="radio-label">
+															<span class="radio-text">ANO</span>
+														</span>
+													</label>
+
+													<label class="radio-wrapper">
+														<input type="radio" name="keysReturn" value="ne" />
+														<span class="radio-label">
+															<span class="radio-text">NE</span>
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<hr />
+
+										<button class="btn btn-primary" type="submit">Odeslat</button>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
