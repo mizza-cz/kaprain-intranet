@@ -35,6 +35,7 @@ block main %}
         <h2 class="h2">Výstupní formulář</h2>
       </button>
     </nav>
+
     <div class="tab-content" id="helpdesk-tabContent">
       <div
         class="tab-pane show active"
@@ -75,7 +76,7 @@ block main %}
                 <div class="col-12">
                   <label>
                     Funkce
-                    <input type="text" name="position" />
+                    <input type="text" name="position" required />
                   </label>
                 </div>
                 <div class="col-12">
@@ -96,43 +97,51 @@ block main %}
                     <select class="js-select" name="cooperationType" required>
                       <option value="">Vyberte formu spolupráce</option>
                       <option value="HPP">HPP</option>
-                      <option value="DPP">DPP</option>
+                      <option value="DPP">DPP/DPČ</option>
                       <option value="ICO">IČO</option>
                     </select>
                   </label>
                 </div>
 
                 <div class="col-12">
-                  <label>
-                    Emailová adresa
-                    <input type="email" name="email" required />
-                  </label>
-                </div>
-                <div class="col-12">
-                  <label>
-                    Telefonní číslo
-                    <select class="js-select" name="phoneNumberType" required>
-                      <option value="">Vyberte možnost</option>
-                      <option value="existing">Stávající</option>
-                      <option value="transfer">
-                        Přemigrovat telefonní číslo do majetku společnosti
-                      </option>
-                      <option value="new">Nové</option>
-                    </select>
-                  </label>
+                  <legend>Emailová adresa</legend>
+                  <div class="radio-group mb-0">
+                    <label class="radio-wrapper">
+                      <input type="radio" name="mail" value="ano" required />
+                      <span class="radio-label">
+                        <span class="radio-text">ANO</span>
+                      </span>
+                    </label>
+                    <label class="radio-wrapper">
+                      <input type="radio" name="mail" value="ne" required />
+                      <span class="radio-label">
+                        <span class="radio-text">Ne</span>
+                      </span>
+                    </label>
+                  </div>
                 </div>
 
                 <div class="col-12">
                   <legend>Pracovní místo</legend>
                   <div class="radio-group mb-3">
                     <label class="radio-wrapper">
-                      <input type="radio" name="workplace" value="ano" />
+                      <input
+                        type="radio"
+                        name="workplace"
+                        value="ano"
+                        required
+                      />
                       <span class="radio-label">
                         <span class="radio-text">ANO</span>
                       </span>
                     </label>
                     <label class="radio-wrapper">
-                      <input type="radio" name="workplace" value="ne" />
+                      <input
+                        type="radio"
+                        name="workplace"
+                        value="ne"
+                        required
+                      />
                       <span class="radio-label">
                         <span class="radio-text">Ne</span>
                       </span>
@@ -140,27 +149,49 @@ block main %}
                   </div>
                   <label>
                     Kde
-                    <input type="text" name="workplaceLocation" />
+                    <input type="text" name="workplaceLocation" required />
                   </label>
                 </div>
                 <div class="col-12">
                   <legend>Služební telefonní přístroj</legend>
                   <div class="radio-group mb-0">
                     <label class="radio-wrapper">
-                      <input type="radio" name="companyPhone" value="ano" />
+                      <input
+                        type="radio"
+                        name="companyPhone"
+                        value="ano"
+                        required
+                      />
                       <span class="radio-label">
                         <span class="radio-text">ANO</span>
                       </span>
                     </label>
                     <label class="radio-wrapper">
-                      <input type="radio" name="companyPhone" value="ne" />
+                      <input
+                        type="radio"
+                        name="companyPhone"
+                        value="ne"
+                        required
+                      />
                       <span class="radio-label">
                         <span class="radio-text">Ne</span>
                       </span>
                     </label>
                   </div>
                 </div>
-
+                <div class="col-12">
+                  <label>
+                    Telefonní číslo
+                    <select class="js-select" name="phoneNumberType" required>
+                      <option value="">Vyberte možnost</option>
+                      <option value="new">Nové</option>
+                      <option value="new_or_transfer">
+                        Požadavek na nové telefonní číslo; přemigrovat telefonní
+                        číslo do majetku společnosti
+                      </option>
+                    </select>
+                  </label>
+                </div>
                 <div class="col-12">
                   <legend>Přístup na sdílené disky</legend>
                   <div class="radio-group mb-3">
@@ -169,6 +200,7 @@ block main %}
                         type="radio"
                         name="sharedDrivesAccess"
                         value="ano"
+                        required
                       />
                       <span class="radio-label">
                         <span class="radio-text">ANO</span>
@@ -179,6 +211,7 @@ block main %}
                         type="radio"
                         name="sharedDrivesAccess"
                         value="ne"
+                        required
                       />
                       <span class="radio-label">
                         <span class="radio-text">Ne</span>
@@ -187,7 +220,7 @@ block main %}
                   </div>
                   <label>
                     Na které
-                    <input type="text" name="sharedDrives" />
+                    <input type="text" name="sharedDrives" required />
                   </label>
                 </div>
 
@@ -195,13 +228,13 @@ block main %}
                   <legend>VPN</legend>
                   <div class="radio-group mb-0">
                     <label class="radio-wrapper">
-                      <input type="radio" name="vpn" value="ano" />
+                      <input type="radio" name="vpn" value="ano" required />
                       <span class="radio-label">
                         <span class="radio-text">ANO</span>
                       </span>
                     </label>
                     <label class="radio-wrapper">
-                      <input type="radio" name="vpn" value="ne" />
+                      <input type="radio" name="vpn" value="ne" required />
                       <span class="radio-label">
                         <span class="radio-text">Ne</span>
                       </span>
@@ -247,7 +280,7 @@ block main %}
                 <div class="col-12">
                   <label>
                     Jméno a příjmení
-                    <select class="js-select" name="fullName">
+                    <select class="js-select" name="fullName" required>
                       <option value="">Vyberte zaměstnance</option>
                       <option value="jan-novak">Jan Novák</option>
                       <option value="petr-svoboda">Petr Svoboda</option>
@@ -272,7 +305,7 @@ block main %}
                 <div class="col-12">
                   <label>
                     Funkce
-                    <input type="text" name="position" />
+                    <input type="text" name="position" required />
                   </label>
                 </div>
 
@@ -296,23 +329,47 @@ block main %}
                     <select class="js-select" name="cooperationType" required>
                       <option value="">Vyberte formu spolupráce</option>
                       <option value="HPP">HPP</option>
-                      <option value="DPP">DPP</option>
+                      <option value="DPP">DPP/DPČ</option>
                       <option value="ICO">IČO</option>
                     </select>
                   </label>
                 </div>
 
                 <div class="col-12">
-                  <label>
-                    Vrácení pracovních pomůcek
-                    <input type="text" name="returnedEquipment" />
-                  </label>
+                  <legend>Vrácení pracovních pomůcek</legend>
+
+                  <div class="radio-group">
+                    <label class="radio-wrapper">
+                      <input
+                        type="radio"
+                        name="returnedEquipment"
+                        value="ano"
+                        required
+                      />
+                      <span class="radio-label">
+                        <span class="radio-text">ANO</span>
+                      </span>
+                    </label>
+
+                    <label class="radio-wrapper">
+                      <input
+                        type="radio"
+                        name="returnedEquipment"
+                        value="ne"
+                        required
+                      />
+                      <span class="radio-label">
+                        <span class="radio-text">NE</span>
+                      </span>
+                    </label>
+                  </div>
+                  <input type="text" name="returnedEquipmentInput" required />
                 </div>
 
                 <div class="col-12">
                   <label>
                     Telefonní číslo
-                    <select class="js-select" name="phoneTransfer">
+                    <select class="js-select" name="phoneTransfer" required>
                       <option value="">Vyberte možnost</option>
                       <option value="transfer">Bude se převádět</option>
                       <option value="company">
@@ -325,7 +382,7 @@ block main %}
                 <div class="col-12">
                   <label>
                     Služební telefonní přístroj
-                    <select class="js-select" name="companyPhone">
+                    <select class="js-select" name="companyPhone" required>
                       <option value="">Vyberte možnost</option>
                       <option value="buyout">Odkup</option>
                       <option value="company">
@@ -336,38 +393,28 @@ block main %}
                 </div>
 
                 <div class="col-12">
-                  <legend>Vrací vstupní čip</legend>
-
-                  <div class="radio-group mb-0">
-                    <label class="radio-wrapper">
-                      <input type="radio" name="chipReturn" value="ano" />
-                      <span class="radio-label">
-                        <span class="radio-text">ANO</span>
-                      </span>
-                    </label>
-
-                    <label class="radio-wrapper">
-                      <input type="radio" name="chipReturn" value="ne" />
-                      <span class="radio-label">
-                        <span class="radio-text">NE</span>
-                      </span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-12">
                   <legend>Vrací klíče</legend>
 
                   <div class="radio-group mb-0">
                     <label class="radio-wrapper">
-                      <input type="radio" name="keysReturn" value="ano" />
+                      <input
+                        type="radio"
+                        name="keysReturn"
+                        value="ano"
+                        required
+                      />
                       <span class="radio-label">
                         <span class="radio-text">ANO</span>
                       </span>
                     </label>
 
                     <label class="radio-wrapper">
-                      <input type="radio" name="keysReturn" value="ne" />
+                      <input
+                        type="radio"
+                        name="keysReturn"
+                        value="ne"
+                        required
+                      />
                       <span class="radio-label">
                         <span class="radio-text">NE</span>
                       </span>
